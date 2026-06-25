@@ -3,7 +3,7 @@ import chromadb
 from sentence_transformers import SentenceTransformer
 
 print("Carregando modelo de embeddings...")
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
 
 print("Conectando ao ChromaDB...")
 client = chromadb.HttpClient(

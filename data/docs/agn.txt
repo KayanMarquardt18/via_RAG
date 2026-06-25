@@ -7,7 +7,7 @@ Eles emitem enormes quantidades de energia sob a forma de luz, radiação, jatos
 
 Enquanto buracos negros inativos são praticamente invisíveis, AGNs podem ser detectados em diversas regiões do espectro eletromagnético.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0002"
 [ESTRUTURA DE UM AGN]
@@ -22,7 +22,7 @@ Um AGN é composto por:
 
 O material que orbita o buraco negro aquece devido ao atrito, emitindo grandes quantidades de energia.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0003"
 [DISCOS DE ACREÇÃO]
@@ -35,7 +35,7 @@ Essas colisões geram calor intenso e emissão de radiação.
 
 Grande parte da luminosidade observada em AGNs é produzida por esses discos.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0004"
 [JATOS RELATIVÍSTICOS]
@@ -46,7 +46,7 @@ Esse material forma jatos que podem viajar a milhões de quilômetros por hora.
 
 Os jatos podem se estender por centenas de milhares de anos-luz além da galáxia hospedeira.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0005"
 [VENTOS GALÁCTICOS]
@@ -57,7 +57,7 @@ Esses ventos transportam gás e energia para regiões distantes da galáxia.
 
 Os ventos podem aquecer nuvens de gás interestelar e influenciar a evolução galáctica.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0006"
 [FORMAÇÃO ESTELAR]
@@ -68,7 +68,7 @@ O aquecimento do gás dificulta seu colapso gravitacional.
 
 Quando o gás esfria novamente, a formação estelar pode ser retomada.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0007"
 [CLASSIFICAÇÃO DOS AGNs]
@@ -82,7 +82,7 @@ Os principais tipos de AGNs incluem:
 
 As diferenças observadas dependem principalmente da distância, luminosidade e orientação dos jatos em relação à Terra.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0008"
 [GALÁXIAS SEYFERT]
@@ -93,7 +93,7 @@ Normalmente estão localizados a dezenas de milhões de anos-luz.
 
 Sua proximidade permite estudar tanto o núcleo ativo quanto a galáxia hospedeira.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0009"
 [QUASARES]
@@ -104,7 +104,7 @@ Podem emitir entre 100 e 1000 vezes mais luz que uma galáxia inteira.
 
 Muitos quasares são observados como eram quando o universo possuía apenas algumas centenas de milhões de anos.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0010"
 [BLAZARES]
@@ -115,7 +115,7 @@ Neles, um dos jatos relativísticos aponta diretamente para a Terra.
 
 Esse alinhamento faz com que pareçam extremamente brilhantes devido aos efeitos relativísticos.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0011"
 [OBSERVAÇÃO NO INFRAVERMELHO]
@@ -126,7 +126,7 @@ O Telescópio Espacial James Webb fornece imagens e espectros de alta resoluçã
 
 Isso permite estudar AGNs tanto próximos quanto extremamente distantes.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0012"
 [AGN E EVOLUÇÃO GALÁCTICA]
@@ -137,7 +137,7 @@ Suas emissões regulam a distribuição de gás, a formação de estrelas e a di
 
 A relação entre a massa dos buracos negros supermassivos e suas galáxias hospedeiras é um dos principais temas da astrofísica moderna.
 
----
+--------------------------------------------------
 
 id="nasa_agn_0013"
 [IMPORTÂNCIA CIENTÍFICA]
@@ -151,3 +151,5 @@ O estudo dos AGNs ajuda a compreender:
 * Interações entre matéria, energia e gravidade em escalas extremas
 
 Os AGNs estão entre os fenômenos mais energéticos conhecidos no universo observável.
+
+--------------------------------------------------
