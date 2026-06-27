@@ -1,0 +1,44 @@
+id="nasa_bb_0001"
+[TÓPICO: O QUE É A TEORIA DO BIG BANG]
+
+A Teoria do Big Bang descreve como o universo se expandiu a partir de um estado inicial de densidade e temperatura extremamente altas, há aproximadamente 13,8 bilhões de anos.
+
+Importante esclarecer um mal-entendido comum: o Big Bang não foi uma explosão ocorrendo dentro de um espaço já existente, mas sim a própria expansão do espaço-tempo a partir de um estado inicial extremamente compacto. Desde então, o universo continua se expandindo continuamente.
+
+--------------------------------------------------
+
+id="nasa_bb_0002"
+[EVIDÊNCIA 1: A EXPANSÃO DO UNIVERSO]
+
+A primeira grande evidência observacional veio do astrônomo Edwin Hubble, que descobriu que galáxias distantes estão se afastando de nós - e que, quanto mais distante a galáxia, mais rápido ela se afasta.
+
+Esse padrão, conhecido como Lei de Hubble, é medido através do redshift da luz das galáxias: a luz é deslocada para comprimentos de onda mais longos (mais vermelhos) à medida que o espaço entre a fonte e o observador se expande. Esse foi o primeiro indício forte de que o universo não é estático, mas está em expansão constante.
+
+--------------------------------------------------
+
+id="nasa_bb_0003"
+[EVIDÊNCIA 2: RADIAÇÃO CÓSMICA DE FUNDO (CMB)]
+
+Em 1965, os físicos Arno Penzias e Robert Wilson descobriram acidentalmente um sinal de rádio fraco e uniforme, vindo de todas as direções do céu, com uma temperatura de aproximadamente 2,7 Kelvin.
+
+Esse sinal é a Radiação Cósmica de Fundo (CMB) - o brilho remanescente do universo primordial, emitido cerca de 380 mil anos após o Big Bang, quando o universo havia esfriado o suficiente para que átomos estáveis se formassem e a luz pudesse, finalmente, viajar livremente pelo espaço.
+
+A descoberta da CMB foi a confirmação observacional decisiva que fez a maioria dos astrônomos abandonar teorias alternativas, como o "modelo estacionário", em favor do Big Bang.
+
+--------------------------------------------------
+
+id="nasa_bb_0004"
+[EVIDÊNCIA 3: ABUNDÂNCIA DE ELEMENTOS LEVES]
+
+A teoria do Big Bang também prevê com precisão as proporções de elementos químicos mais leves formados nos primeiros minutos do universo, principalmente hidrogênio e hélio, através de um processo chamado nucleossíntese primordial.
+
+As proporções observadas hoje no universo - aproximadamente 75% de hidrogênio e 25% de hélio, em massa - combinam de forma notável com as previsões teóricas, reforçando a validade do modelo.
+
+--------------------------------------------------
+
+id="nasa_bb_0005"
+[O QUE AINDA É DEBATIDO]
+
+Apesar do forte consenso científico, a Teoria do Big Bang ainda tem questões abertas, incluindo: a natureza exata da inflação cósmica (uma fase de expansão acelerada nos primeiros instantes do universo, proposta para explicar a uniformidade observada na CMB), a identidade física da matéria escura e da energia escura, e o desequilíbrio observado entre matéria e antimatéria no universo atual.
+
+--------------------------------------------------

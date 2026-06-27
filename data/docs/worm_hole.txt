@@ -1,0 +1,49 @@
+id="nasa_min_0001"
+[TÓPICO: O QUE SÃO BURACOS DE MINHOCA]
+
+Buracos de minhoca (wormholes) são estruturas teóricas previstas pelas equações da Relatividade Geral de Einstein, que funcionariam como uma espécie de "atalho" conectando dois pontos distintos do espaço-tempo através de um túnel.
+
+Diferente de viajar pelo caminho convencional através do espaço tridimensional comum, um buraco de minhoca permitiria, em teoria, ir diretamente de um ponto a outro através desse túnel, potencialmente percorrendo uma distância muito menor do que a rota normal pelo espaço.
+
+Até hoje, não existe nenhuma evidência observacional de que buracos de minhoca realmente existam na natureza - eles permanecem inteiramente no campo teórico e matemático da física.
+
+--------------------------------------------------
+
+id="nasa_min_0002"
+[A PONTE DE EINSTEIN-ROSEN]
+
+A primeira descrição matemática de um buraco de minhoca surgiu em 1935, em um trabalho de Albert Einstein e Nathan Rosen. Eles não estavam tentando descrever um "portal" de viagem - na verdade, buscavam construir um modelo geométrico de partícula elementar, livre de singularidades.
+
+A solução que encontraram descrevia uma espécie de "ponte" conectando duas regiões do espaço-tempo. Essa estrutura ficou conhecida como Ponte de Einstein-Rosen, e é considerada historicamente a primeira representação matemática daquilo que mais tarde seria popularizado como "buraco de minhoca" - termo cunhado posteriormente pelo físico John Wheeler.
+
+--------------------------------------------------
+
+id="nasa_min_0003"
+[BURACOS DE MINHOCA TRANSPONÍVEIS E NÃO TRANSPONÍVEIS]
+
+Buracos de minhoca teóricos se dividem em duas categorias principais:
+
+* Não transponíveis: o túnel colapsa (se fecha) tão rapidamente que nem mesmo a luz teria tempo de atravessá-lo. A Ponte de Einstein-Rosen original, em sua formulação clássica, se encaixa nessa categoria - ela se fecha mais rápido do que qualquer coisa conseguiria passar por ela.
+* Transponíveis: uma versão hipotética, estável o suficiente para permitir que matéria ou informação realmente atravessasse de um lado ao outro.
+
+Para que um buraco de minhoca transponível pudesse existir de forma estável, a física teórica atual indica que seria necessária uma forma exótica de matéria ou energia, capaz de violar certas condições de energia exigidas pela relatividade geral para manter o túnel aberto - algo que nunca foi observado experimentalmente.
+
+--------------------------------------------------
+
+id="nasa_min_0004"
+[POR QUE SÃO TÃO ESPECULATIVOS]
+
+Embora as equações da relatividade geral permitam, matematicamente, soluções do tipo buraco de minhoca, isso não significa que eles existam fisicamente no universo real.
+
+Pesquisas mais recentes reforçam que a versão original da Ponte de Einstein-Rosen é instável e não observável, sendo descrita por muitos físicos como uma estrutura puramente matemática, e não um "portal" real. A maior parte do interesse científico atual em buracos de minhoca está relacionada a explorar os limites teóricos da relatividade geral e sua possível conexão com a física quântica, e não a viagens espaciais práticas.
+
+--------------------------------------------------
+
+id="nasa_min_0005"
+[CONEXÃO COM A FÍSICA QUÂNTICA]
+
+Em anos mais recentes, físicos teóricos propuseram conexões especulativas entre buracos de minhoca e o fenômeno do emaranhamento quântico - a ideia, conhecida informalmente como conjectura "ER=EPR", de que pontes de Einstein-Rosen poderiam estar matematicamente relacionadas a pares de partículas quânticas emaranhadas.
+
+Essa é uma área de pesquisa teórica ativa e em aberto, situada na fronteira entre a relatividade geral e a teoria quântica de campos - duas das áreas mais fundamentais (e ainda não totalmente reconciliadas) da física moderna.
+
+--------------------------------------------------

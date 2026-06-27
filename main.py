@@ -1,67 +1,98 @@
-import json
-
-# ----------------------------
-# 1. CARREGAR DADOS
-# ----------------------------
-def carregar_dados():
-    with open('data/black_holes.json', 'r', encoding='utf-8') as arquivo:
-        return json.load(arquivo)
+from src.ml_predict import load_model, prepare_input, predict
+from src.rag_engine import get_rag_explanation
 
 
-# ----------------------------
-# 2. MOSTRAR CATÁLOGO
-# ----------------------------
-def mostrar_catalogo(buracos_negros):
-    print("\n🌌 BURACOS NEGROS DISPONÍVEIS PARA PESQUISA:\n")
+# =========================================
+# 1. CONFIGURAÇÃO DO SISTEMA
+# =========================================
 
-    for bh in buracos_negros:
-        print(f"- {bh['nome']}")
+MODEL_PATH = "models/galaxy_model.pkl"
 
 
-# ----------------------------
-# 3. BUSCAR OBJETO
-# ----------------------------
-def buscar_buraco_negro(buracos_negros, nome):
-    for bh in buracos_negros:
-        if bh['nome'].lower() == nome.lower():
-            return bh
-    return None
+# =========================================
+# 2. PIPELINE PRINCIPAL
+# =========================================
+
+def run_system(model, features):
+    """
+    Executa o fluxo completo:
+    ML → RAG → resposta final
+    """
+
+    # 1. preparar entrada
+    input_df = prepare_input(features)
+
+    # 2. previsão do modelo
+    prediction, probabilities = predict(model, input_df)
+
+    # 3. explicação via RAG
+    explanation = get_rag_explanation(prediction)
+
+    return prediction, probabilities, explanation
 
 
-# ----------------------------
-# 4. MOSTRAR DETALHES
-# ----------------------------
-def mostrar_detalhes(bh):
-    print("\n📡 DETALHES DO BURACO NEGRO\n")
-    print(f"Nome: {bh['nome']}")
-    print(f"Tipo: {bh['tipo']}")
-    print(f"Galáxia: {bh['galaxia']}")
-    print(f"Massa (milhões de massas solares): {bh['massa_milhoes_solares']}")
-    print(f"Distância (anos-luz): {bh['distancia_anos_luz']}")
-    print(f"Descrição: {bh['descricao']}")
+# =========================================
+# 3. OUTPUT FORMATADO
+# =========================================
+
+def show_result(model, prediction, probabilities, explanation):
+    print("\n====================================")
+    print("🔭 SISTEMA HÍBRIDO DE ASTRONOMIA")
+    print("   (ML + RAG INTEGRADO)")
+    print("====================================")
+
+    print(f"\n🧠 Classe prevista: {prediction}")
+
+    print("\n📊 Probabilidades:")
+
+    for cls, prob in zip(model.classes_, probabilities):
+        print(f"  {cls}: {prob:.4f}")
+
+    print("\n📚 Explicação (RAG):")
+    print(explanation)
+
+    print("\n====================================\n")
 
 
-# ----------------------------
-# 5. PROGRAMA PRINCIPAL
-# ----------------------------
+# =========================================
+# 4. MAIN
+# =========================================
+
 def main():
-    buracos_negros = carregar_dados()
+    # carregar modelo ML
+    model = load_model(MODEL_PATH)
 
-    mostrar_catalogo(buracos_negros)
+    print("\nSistema iniciado. Digite valores ou 'sair'.")
+    print("Formato: u g r i z redshift\n")
 
-    print("\nOlá! Qual buraco negro você quer saber mais informações?")
-    info = input("Digite o nome: ")
+    while True:
+        user_input = input("Input: ")
 
-    resultado = buscar_buraco_negro(buracos_negros, info)
+        if user_input.lower() == "sair":
+            print("Encerrando sistema...")
+            break
 
-    if resultado:
-        mostrar_detalhes(resultado)
-    else:
-        print("\n❌ Buraco negro não encontrado.")
+        try:
+            # converter input string → lista de floats
+            features = list(map(float, user_input.split()))
+
+            if len(features) != 6:
+                print("❌ Erro: você deve inserir 6 valores.")
+                continue
+
+            # rodar sistema completo
+            prediction, probs, explanation = run_system(model, features)
+
+            # mostrar resultado
+            show_result(model, prediction, probs, explanation)
+
+        except ValueError:
+            print("❌ Erro: digite apenas números separados por espaço.")
 
 
-# ----------------------------
-# 6. EXECUÇÃO
-# ----------------------------
+# =========================================
+# EXECUÇÃO
+# =========================================
+
 if __name__ == "__main__":
     main()

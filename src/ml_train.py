@@ -1,48 +1,125 @@
 import pandas as pd
 from pathlib import Path
 
-print("Carregando dataset...")
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+import joblib
 
-DATASET = Path("data/galaxydt.csv")
+# =========================================
+# 1. CARREGAMENTO DO DATASET
+# =========================================
 
-df = pd.read_csv(DATASET)
+DATASET_PATH = Path("data/galaxydt.csv")
 
-print("\n========================================")
-print("DATASET CARREGADO")
-print("========================================")
+def load_data(path: Path) -> pd.DataFrame:
+    print("Carregando dataset...")
+    df = pd.read_csv(path)
+    print(f"Dataset carregado: {df.shape[0]} linhas, {df.shape[1]} colunas")
+    return df
 
-print(f"\nLinhas: {df.shape[0]}")
-print(f"Colunas: {df.shape[1]}")
 
-print("\nColunas:")
-print(df.columns.tolist())
+# =========================================
+# 2. PREPARAÇÃO DOS DADOS
+# =========================================
 
-print("\n========================================")
-print("PRIMEIRAS 5 LINHAS")
-print("========================================")
+def prepare_data(df: pd.DataFrame):
+    features = ["u", "g", "r", "i", "z", "redshift"]
 
-print(df.head())
+    X = df[features]
+    y = df["class"]
 
-print("\n========================================")
-print("TIPOS DAS COLUNAS")
-print("========================================")
+    print("\nDistribuição das classes:")
+    print(y.value_counts())
 
-print(df.dtypes)
+    return X, y
 
-print("\n========================================")
-print("VALORES NULOS")
-print("========================================")
 
-print(df.isnull().sum())
+# =========================================
+# 3. SPLIT TREINO / TESTE
+# =========================================
 
-print("\n========================================")
-print("DISTRIBUIÇÃO DAS CLASSES")
-print("========================================")
+def split_data(X, y):
+    X_train, X_test, y_train, y_test = train_test_split(
+        X,
+        y,
+        test_size=0.2,
+        random_state=42,
+        stratify=y
+    )
 
-print(df["class"].value_counts())
+    print("\nSplit concluído:")
+    print(f"Treino: {X_train.shape[0]} amostras")
+    print(f"Teste: {X_test.shape[0]} amostras")
 
-print("\n========================================")
-print("ESTATÍSTICAS NUMÉRICAS")
-print("========================================")
+    return X_train, X_test, y_train, y_test
 
-print(df.describe())
+
+# =========================================
+# 4. TREINAMENTO DO MODELO
+# =========================================
+
+def train_model(X_train, y_train):
+    print("\nTreinando modelo Random Forest...")
+
+    model = RandomForestClassifier(
+        n_estimators=100,
+        random_state=42
+    )
+
+    model.fit(X_train, y_train)
+
+    print("Modelo treinado com sucesso!")
+    return model
+
+
+# =========================================
+# 5. AVALIAÇÃO
+# =========================================
+
+def evaluate_model(model, X_test, y_test):
+    print("\nAvaliando modelo...")
+
+    y_pred = model.predict(X_test)
+
+    acc = accuracy_score(y_test, y_pred)
+
+    print(f"\nAccuracy: {acc:.4f}")
+    print("\nClassification Report:")
+    print(classification_report(y_test, y_pred))
+
+    print("\nConfusion Matrix:")
+    print(confusion_matrix(y_test, y_pred))
+
+
+# =========================================
+# 6. SALVAR MODELO
+# =========================================
+
+def save_model(model, path="models/galaxy_model.pkl"):
+    Path("models").mkdir(exist_ok=True)
+
+    joblib.dump(model, path)
+    print(f"\nModelo salvo em: {path}")
+
+
+# =========================================
+# MAIN
+# =========================================
+
+def main():
+    df = load_data(DATASET_PATH)
+
+    X, y = prepare_data(df)
+
+    X_train, X_test, y_train, y_test = split_data(X, y)
+
+    model = train_model(X_train, y_train)
+
+    evaluate_model(model, X_test, y_test)
+
+    save_model(model)
+
+
+if __name__ == "__main__":
+    main()

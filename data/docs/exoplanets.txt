@@ -1,0 +1,65 @@
+id="nasa_exo_0001"
+[TÓPICO: O QUE SÃO EXOPLANETAS]
+
+Exoplanetas são planetas que orbitam estrelas fora do nosso Sistema Solar.
+
+O primeiro exoplaneta orbitando uma estrela do tipo solar foi descoberto em 1995, usando o método de velocidade radial. Desde então, o número de descobertas cresceu de forma explosiva, especialmente após o lançamento de telescópios espaciais dedicados a essa busca.
+
+Atualmente, milhares de exoplanetas já foram confirmados, e dezenas de milhares de candidatos aguardam validação através de observações complementares.
+
+--------------------------------------------------
+
+id="nasa_exo_0002"
+[MÉTODO DO TRÂNSITO]
+
+O método do trânsito é responsável pela maior parte das descobertas recentes de exoplanetas.
+
+Ele funciona observando o brilho de uma estrela ao longo do tempo. Quando um planeta passa exatamente na frente da estrela (do nosso ponto de vista), ele bloqueia uma pequena fração da luz, causando uma queda sutil e periódica no brilho observado.
+
+As missões Kepler e TESS, da NASA, usaram esse método de forma massiva, monitorando o brilho de centenas de milhares de estrelas simultaneamente para detectar esses padrões.
+
+--------------------------------------------------
+
+id="nasa_exo_0003"
+[MÉTODO DA VELOCIDADE RADIAL]
+
+Esse método detecta exoplanetas de forma indireta, observando o efeito gravitacional do planeta sobre sua estrela.
+
+Um planeta não orbita uma estrela perfeitamente parada - na verdade, planeta e estrela orbitam um centro de massa comum, fazendo a estrela "balançar" levemente.
+
+Esse balanço causa um efeito Doppler na luz da estrela: ela se aproxima e se afasta de nós em um padrão periódico, mudando sutilmente de cor (deslocando-se entre tons mais azuis e mais vermelhos). Medindo esse padrão, astrônomos conseguem inferir a presença e a massa aproximada do planeta.
+
+--------------------------------------------------
+
+id="nasa_exo_0004"
+[OUTROS MÉTODOS DE DETECÇÃO]
+
+Além do trânsito e da velocidade radial, existem outras técnicas complementares:
+
+* Imageamento direto: capturar uma imagem real do exoplaneta, algo extremamente difícil devido ao brilho avassalador da estrela hospedeira em comparação ao planeta.
+* Microlente gravitacional: ocorre quando a gravidade de um sistema planetário distante curva e amplifica temporariamente a luz de uma estrela de fundo, revelando a presença do planeta.
+* Astrometria: mede deslocamentos minúsculos na posição aparente de uma estrela no céu, causados pela influência gravitacional de um planeta.
+
+Cada método tem vantagens e limitações, e frequentemente são usados em conjunto para confirmar e caracterizar um mesmo exoplaneta com mais confiança.
+
+--------------------------------------------------
+
+id="nasa_exo_0005"
+[ZONA HABITÁVEL]
+
+A zona habitável é a região orbital em torno de uma estrela onde a temperatura permite a existência de água líquida na superfície de um planeta - condição considerada fundamental para a vida como conhecemos.
+
+Essa zona depende de fatores como a luminosidade e a temperatura da estrela: estrelas mais quentes e brilhantes têm zonas habitáveis mais distantes e largas; estrelas mais frias e fracas têm zonas habitáveis mais próximas e estreitas.
+
+Estar na zona habitável não garante que um planeta tenha vida ou seja habitável de fato - outros fatores, como atmosfera, composição e atividade geológica, também são essenciais. Mas é o primeiro critério usado para priorizar candidatos de interesse astrobiológico.
+
+--------------------------------------------------
+
+id="nasa_exo_0006"
+[INTELIGÊNCIA ARTIFICIAL NA BUSCA POR EXOPLANETAS]
+
+Com a quantidade massiva de dados gerados por missões como Kepler e TESS, técnicas de aprendizado de máquina se tornaram essenciais para acelerar a descoberta e validação de exoplanetas.
+
+Algoritmos como Random Forest são usados para analisar sinais de trânsito e diferenciar candidatos reais de falsos positivos (como manchas estelares ou sistemas binários que imitam o padrão de um trânsito planetário), tornando esse processo muito mais rápido do que a validação manual de cada candidato.
+
+--------------------------------------------------

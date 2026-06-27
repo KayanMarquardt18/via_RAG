@@ -37,8 +37,10 @@ for arquivo in DATA_FOLDER.glob("*.txt"):
 
         embedding = model.encode(chunk).tolist()
 
-        collection.add(
-            ids=[f"{arquivo.stem}_{i}"],
+        chunk_id = f"{arquivo.stem}_{i}"
+
+        collection.upsert(
+            ids=[chunk_id],
             documents=[chunk],
             embeddings=[embedding],
             metadatas=[{
@@ -49,5 +51,5 @@ for arquivo in DATA_FOLDER.glob("*.txt"):
         total_chunks += 1
 
 print("\n================================")
-print(f"Chunks inseridos: {total_chunks}")
+print(f"Chunks processados: {total_chunks}")
 print("================================")

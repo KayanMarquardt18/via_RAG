@@ -1,0 +1,50 @@
+id="nasa_sis_0001"
+[TÓPICO: ESTRUTURA GERAL DO SISTEMA SOLAR]
+
+O Sistema Solar se formou há aproximadamente 4,6 bilhões de anos, a partir do colapso gravitacional de uma nuvem de gás e poeira.
+
+Ele é composto pelo Sol, oito planetas, seus satélites naturais, planetas-anões, e uma enorme quantidade de corpos menores, como asteroides e cometas, organizados em regiões específicas: o cinturão de asteroides (entre Marte e Júpiter), o cinturão de Kuiper (além de Netuno) e, mais distante ainda, a hipotética Nuvem de Oort.
+
+--------------------------------------------------
+
+id="nasa_sis_0002"
+[CINTURÃO DE ASTEROIDES]
+
+O cinturão de asteroides é uma região localizada entre as órbitas de Marte e Júpiter, contendo um grande número de corpos rochosos e metálicos de tamanhos variados.
+
+Apesar de conter muitos objetos, sua massa total é pequena - estimada em apenas cerca de 3% da massa da Lua. Cerca de 60% dessa massa está concentrada em apenas quatro asteroides: Ceres, Vesta, Palas e Higeia. Ceres é o único objeto do cinturão grande o suficiente para ser classificado como planeta-anão.
+
+A formação do cinturão está ligada à influência gravitacional de Júpiter, que impediu que esses fragmentos rochosos se aglutinassem para formar um planeta completo.
+
+--------------------------------------------------
+
+id="nasa_sis_0003"
+[CINTURÃO DE KUIPER]
+
+O cinturão de Kuiper é uma região em forma de disco, localizada além da órbita de Netuno, entre aproximadamente 30 e 50 unidades astronômicas (UA) do Sol (1 UA é a distância média entre a Terra e o Sol).
+
+Diferente do cinturão de asteroides, que é composto principalmente por rocha e metal, os objetos do cinturão de Kuiper são compostos majoritariamente por gelos voláteis, como metano, amônia e água congelada.
+
+Essa região abriga a maioria dos planetas-anões reconhecidos, incluindo Plutão, Haumea, Makemake e Orcus. Acredita-se que seja uma fonte importante de cometas de período curto (com órbitas de até 200 anos).
+
+--------------------------------------------------
+
+id="nasa_sis_0004"
+[COMETAS]
+
+Cometas são pequenos corpos compostos principalmente de gelo, rocha e poeira, frequentemente descritos como "bolas de neve sujas".
+
+Eles percorrem órbitas extremamente elípticas, que os levam muito perto do Sol e depois de volta às regiões distantes do Sistema Solar. Quando se aproximam do Sol, o calor faz seus gelos sublimarem (passarem direto do estado sólido para gasoso), formando a característica cauda brilhante que os torna visíveis no céu.
+
+Cometas são classificados em dois grupos: cometas de período curto (originados principalmente no cinturão de Kuiper, com órbitas de até 200 anos) e cometas de período longo (originados na distante e hipotética Nuvem de Oort, podendo levar de milhares a milhões de anos para completar uma órbita).
+
+--------------------------------------------------
+
+id="nasa_sis_0005"
+[A NUVEM DE OORT]
+
+A Nuvem de Oort é uma região hipotética, em forma esférica, que envolveria todo o Sistema Solar a distâncias muito maiores que o cinturão de Kuiper - estimada entre 2.000 e 100.000 unidades astronômicas do Sol.
+
+Nunca foi observada diretamente, mas sua existência é inferida a partir do comportamento dos cometas de período longo, cujas órbitas extremamente alongadas e orientadas de forma aleatória sugerem uma origem esférica distante, e não um disco achatado como o cinturão de Kuiper.
+
+--------------------------------------------------
