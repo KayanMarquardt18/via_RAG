@@ -1,0 +1,71 @@
+id="nasa_foto_0001"
+[TÓPICO: O QUE SÃO AS MAGNITUDES U, G, R, I, Z]
+
+O sistema fotométrico ugriz foi desenvolvido para o Sloan Digital Sky Survey (SDSS), um dos maiores levantamentos astronômicos já realizados, que mapeou centenas de milhões de objetos celestes.
+
+Esse sistema mede o brilho de um objeto através de cinco filtros de cor diferentes, cada um sensível a uma faixa específica do espectro eletromagnético:
+
+* u (ultravioleta) - ao redor de 355 nanômetros
+* g (verde/azul) - ao redor de 469 nanômetros
+* r (vermelho) - ao redor de 617 nanômetros
+* i (infravermelho próximo) - ao redor de 748 nanômetros
+* z (infravermelho) - ao redor de 893 nanômetros
+
+Cada letra representa uma "magnitude": um número que indica o brilho do objeto medido especificamente naquele filtro de cor. Quanto MENOR o número da magnitude, MAIS BRILHANTE é o objeto naquela faixa de cor - essa é uma convenção histórica da astronomia que pode confundir no início.
+
+--------------------------------------------------
+
+id="nasa_foto_0002"
+[POR QUE MEDIR EM VÁRIAS CORES AO MESMO TEMPO]
+
+Medir o brilho de um objeto em apenas uma cor conta uma parte da história. Medir em cinco cores diferentes revela o "perfil espectral" daquele objeto - basicamente, como a luz dele se distribui entre o ultravioleta e o infravermelho.
+
+Esse perfil é uma assinatura física real:
+
+* Estrelas mais quentes emitem proporcionalmente mais luz ultravioleta e azul.
+* Estrelas mais frias emitem proporcionalmente mais luz vermelha e infravermelha.
+* Galáxias, sendo compostas por milhões ou bilhões de estrelas de idades e temperaturas variadas, tendem a ter um perfil de cor mais "misturado" e suave.
+* Quasares (e outros AGNs) têm uma assinatura espectral muito particular, com emissão forte em várias faixas, incluindo ultravioleta, devido ao disco de acreção extremamente energético ao redor do buraco negro central.
+
+Por isso, a diferença entre duas magnitudes (chamada de "índice de cor", como u-g ou g-r) é uma ferramenta científica real, usada por astrônomos para estimar temperatura e identificar o tipo de objeto, mesmo sem um espectro completo.
+
+--------------------------------------------------
+
+id="nasa_foto_0003"
+[O QUE É REDSHIFT]
+
+Redshift (desvio para o vermelho) mede o quanto a luz de um objeto foi "esticada" para comprimentos de onda maiores (mais vermelhos) entre o momento em que foi emitida e o momento em que chegou até nós.
+
+Isso acontece principalmente por causa da expansão do universo: quanto mais distante um objeto está, mais o espaço se expandiu enquanto a luz dele viajava até nós, e maior é o redshift observado.
+
+O redshift é representado pela letra z (não confundir com a magnitude z do sistema ugriz - são conceitos diferentes que usam a mesma letra por coincidência histórica).
+
+Um redshift de z=0 significa que o objeto está praticamente parado em relação a nós (como estrelas da nossa própria galáxia). Valores crescentes de z indicam objetos cada vez mais distantes e, no caso de galáxias e quasares, observados como eram há mais tempo no passado do universo.
+
+--------------------------------------------------
+
+id="nasa_foto_0004"
+[REDSHIFT COMO PISTA PARA CLASSIFICAÇÃO]
+
+O redshift é um dos indicadores mais importantes para diferenciar estrelas, galáxias e quasares:
+
+* Estrelas pertencem à nossa própria galáxia, a Via Láctea. Por estarem relativamente próximas, seu redshift devido à expansão do universo é extremamente baixo, próximo de zero. Pequenas variações que aparecem vêm do movimento próprio da estrela, não da expansão cósmica.
+* Galáxias estão fora da Via Láctea, a distâncias que variam de milhões a bilhões de anos-luz. Seu redshift tende a ser moderado a alto, aumentando com a distância.
+* Quasares são os núcleos extremamente brilhantes de galáxias distantes, frequentemente observados a distâncias colossais. Por isso, tendem a ter os redshifts mais altos entre os três tipos, podendo ultrapassar valores de z=6 ou mais nos quasares mais distantes já detectados.
+
+Importante: o redshift por si só não é suficiente para uma classificação perfeita, porque existe alguma sobreposição entre as faixas de redshift de galáxias e quasares mais próximos. Por isso, sistemas de classificação científica e modelos de aprendizado de máquina combinam o redshift com as magnitudes ugriz para chegar a uma classificação mais confiável.
+
+--------------------------------------------------
+
+id="nasa_foto_0005"
+[COMO ISSO SE CONECTA COM MACHINE LEARNING]
+
+Quando um modelo de aprendizado de máquina (como uma Random Forest) é treinado para classificar objetos em STAR, GALAXY ou QSO a partir das colunas u, g, r, i, z e redshift, ele está, na prática, aprendendo a reconhecer esses mesmos padrões físicos que astrônomos usam manualmente:
+
+* Combinações de magnitude que indicam uma assinatura espectral estelar (objeto único, próximo, redshift quase zero).
+* Combinações que indicam uma mistura espectral típica de galáxia (objeto extenso, composto por muitas estrelas, redshift moderado).
+* Combinações que indicam a assinatura energética de um quasar (objeto extremamente distante e luminoso, redshift elevado, perfil de cor influenciado pelo disco de acreção do buraco negro central).
+
+Pesquisas com dados do SDSS mostram que o redshift costuma ser a variável mais importante nesse tipo de classificação, seguido pelas magnitudes nas bandas z e g - mas o conjunto completo das cinco magnitudes melhora significativamente a precisão do modelo, especialmente em casos onde o redshift sozinho não é suficiente para diferenciar um objeto com certeza.
+
+--------------------------------------------------

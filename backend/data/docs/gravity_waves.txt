@@ -1,0 +1,44 @@
+id="nasa_ond_0001"
+[TÓPICO: O QUE SÃO ONDAS GRAVITACIONAIS]
+
+Ondas gravitacionais são ondulações no próprio tecido do espaço-tempo, previstas por Albert Einstein em sua Teoria da Relatividade Geral, em 1916.
+
+Elas são geradas por eventos cósmicos extremamente violentos envolvendo objetos massivos em movimento acelerado, como a fusão de dois buracos negros ou de duas estrelas de nêutrons. Diferente da luz, que é uma onda eletromagnética, as ondas gravitacionais se propagam distorcendo a própria geometria do espaço, esticando e comprimindo distâncias de forma extremamente sutil enquanto viajam.
+
+--------------------------------------------------
+
+id="nasa_ond_0002"
+[A PRIMEIRA DETECÇÃO]
+
+Apesar de previstas teoricamente desde 1916, ondas gravitacionais só foram detectadas diretamente em 14 de setembro de 2015, pelos detectores do LIGO (Laser Interferometer Gravitational-Wave Observatory).
+
+O sinal detectado, batizado de GW150914, veio da fusão de dois buracos negros, com massas da ordem de 30 vezes a massa do Sol cada, localizados a mais de 1 bilhão de anos-luz de distância. Esse evento marcou o início de uma nova era na astronomia: a astronomia de ondas gravitacionais.
+
+--------------------------------------------------
+
+id="nasa_ond_0003"
+[COMO O LIGO DETECTA AS ONDAS]
+
+O LIGO funciona através de um instrumento chamado interferômetro a laser: dois braços longos e perpendiculares, com vários quilômetros de extensão, onde feixes de laser são disparados e refletidos por espelhos.
+
+Quando uma onda gravitacional atravessa o detector, ela distorce minuscularmente o espaço, alterando a distância percorrida pela luz em cada braço por uma fração ínfima - menor que o diâmetro de um próton. Essa diferença é medida com precisão extrema através do padrão de interferência da luz, permitindo identificar a passagem da onda.
+
+--------------------------------------------------
+
+id="nasa_ond_0004"
+[FUSÃO DE ESTRELAS DE NÊUTRONS]
+
+Em agosto de 2017, o LIGO e o detector Virgo (na Europa) detectaram, juntos, ondas gravitacionais provenientes da fusão de duas estrelas de nêutrons.
+
+Esse evento foi especial porque, além das ondas gravitacionais, também foi detectada radiação eletromagnética (incluindo um surto de raios gama) vinda da mesma fonte. Isso permitiu que telescópios ao redor do mundo apontassem para a região do evento e observassem o fenômeno em múltiplas formas de luz simultaneamente - uma abordagem chamada de astronomia multimensageira.
+
+--------------------------------------------------
+
+id="nasa_ond_0005"
+[INTELIGÊNCIA ARTIFICIAL NA DETECÇÃO DE ONDAS GRAVITACIONAIS]
+
+Os detectores de ondas gravitacionais geram um volume enorme de dados, frequentemente contaminados por ruído instrumental complexo, dificultando identificar manualmente um sinal real de fusão.
+
+Por isso, técnicas de aprendizado de máquina, incluindo redes neurais profundas, vêm sendo usadas para acelerar e automatizar a busca por esses sinais em tempo real, ajudando a diferenciar verdadeiros eventos astrofísicos de ruídos espúrios do próprio instrumento (chamados de "glitches"), e classificando rapidamente o tipo de fusão detectada (buracos negros, estrelas de nêutrons, ou combinações entre os dois).
+
+--------------------------------------------------

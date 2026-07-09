@@ -1,0 +1,155 @@
+id="nasa_agn_0001"
+[TÓPICO: NÚCLEOS GALÁCTICOS ATIVOS (AGN)]
+
+Núcleos Galácticos Ativos (AGN - Active Galactic Nuclei) são buracos negros supermassivos ativos localizados no centro das galáxias.
+
+Eles emitem enormes quantidades de energia sob a forma de luz, radiação, jatos e ventos.
+
+Enquanto buracos negros inativos são praticamente invisíveis, AGNs podem ser detectados em diversas regiões do espectro eletromagnético.
+
+--------------------------------------------------
+
+id="nasa_agn_0002"
+[ESTRUTURA DE UM AGN]
+
+Um AGN é composto por:
+
+* Buraco negro supermassivo central
+* Disco de acreção de gás e poeira
+* Campos magnéticos intensos
+* Jatos relativísticos
+* Ventos galácticos energéticos
+
+O material que orbita o buraco negro aquece devido ao atrito, emitindo grandes quantidades de energia.
+
+--------------------------------------------------
+
+id="nasa_agn_0003"
+[DISCOS DE ACREÇÃO]
+
+Discos de acreção são estruturas de gás e poeira que orbitam o buraco negro.
+
+As partículas nesses discos colidem constantemente.
+
+Essas colisões geram calor intenso e emissão de radiação.
+
+Grande parte da luminosidade observada em AGNs é produzida por esses discos.
+
+--------------------------------------------------
+
+id="nasa_agn_0004"
+[JATOS RELATIVÍSTICOS]
+
+Parte do material próximo ao buraco negro é acelerada ao longo de campos magnéticos extremamente intensos.
+
+Esse material forma jatos que podem viajar a milhões de quilômetros por hora.
+
+Os jatos podem se estender por centenas de milhares de anos-luz além da galáxia hospedeira.
+
+--------------------------------------------------
+
+id="nasa_agn_0005"
+[VENTOS GALÁCTICOS]
+
+Além dos jatos, AGNs produzem ventos energéticos.
+
+Esses ventos transportam gás e energia para regiões distantes da galáxia.
+
+Os ventos podem aquecer nuvens de gás interestelar e influenciar a evolução galáctica.
+
+--------------------------------------------------
+
+id="nasa_agn_0006"
+[FORMAÇÃO ESTELAR]
+
+Jatos e ventos provenientes de AGNs podem reduzir temporariamente a formação de estrelas.
+
+O aquecimento do gás dificulta seu colapso gravitacional.
+
+Quando o gás esfria novamente, a formação estelar pode ser retomada.
+
+--------------------------------------------------
+
+id="nasa_agn_0007"
+[CLASSIFICAÇÃO DOS AGNs]
+
+Os principais tipos de AGNs incluem:
+
+* Quasares
+* Blazares
+* Galáxias Seyfert
+* Radiogaláxias
+
+As diferenças observadas dependem principalmente da distância, luminosidade e orientação dos jatos em relação à Terra.
+
+--------------------------------------------------
+
+id="nasa_agn_0008"
+[GALÁXIAS SEYFERT]
+
+Galáxias Seyfert são AGNs relativamente próximos da Terra.
+
+Normalmente estão localizados a dezenas de milhões de anos-luz.
+
+Sua proximidade permite estudar tanto o núcleo ativo quanto a galáxia hospedeira.
+
+--------------------------------------------------
+
+id="nasa_agn_0009"
+[QUASARES]
+
+Quasares são alguns dos objetos mais luminosos do universo.
+
+Podem emitir entre 100 e 1000 vezes mais luz que uma galáxia inteira.
+
+Muitos quasares são observados como eram quando o universo possuía apenas algumas centenas de milhões de anos.
+
+--------------------------------------------------
+
+id="nasa_agn_0010"
+[BLAZARES]
+
+Blazares são uma subclasse de quasares.
+
+Neles, um dos jatos relativísticos aponta diretamente para a Terra.
+
+Esse alinhamento faz com que pareçam extremamente brilhantes devido aos efeitos relativísticos.
+
+--------------------------------------------------
+
+id="nasa_agn_0011"
+[OBSERVAÇÃO NO INFRAVERMELHO]
+
+A luz infravermelha permite observar regiões ocultas por poeira interestelar.
+
+O Telescópio Espacial James Webb fornece imagens e espectros de alta resolução dessas regiões.
+
+Isso permite estudar AGNs tanto próximos quanto extremamente distantes.
+
+--------------------------------------------------
+
+id="nasa_agn_0012"
+[AGN E EVOLUÇÃO GALÁCTICA]
+
+AGNs desempenham papel fundamental na evolução das galáxias.
+
+Suas emissões regulam a distribuição de gás, a formação de estrelas e a dinâmica galáctica.
+
+A relação entre a massa dos buracos negros supermassivos e suas galáxias hospedeiras é um dos principais temas da astrofísica moderna.
+
+--------------------------------------------------
+
+id="nasa_agn_0013"
+[IMPORTÂNCIA CIENTÍFICA]
+
+O estudo dos AGNs ajuda a compreender:
+
+* Crescimento de buracos negros supermassivos
+* Formação e evolução de galáxias
+* Origem dos quasares
+* Universo primordial
+* Interações entre matéria, energia e gravidade em escalas extremas
+
+Os AGNs estão entre os fenômenos mais energéticos conhecidos no universo observável.
+
+--------------------------------------------------

@@ -1,0 +1,51 @@
+id="nasa_mat_0001"
+[TÓPICO: O QUE É MATÉRIA ESCURA]
+
+Matéria escura é um tipo de matéria que não emite, absorve ou reflete luz, tornando-a completamente invisível aos telescópios convencionais.
+
+Sua existência é inferida unicamente através de seus efeitos gravitacionais sobre a matéria visível e sobre a luz. No modelo cosmológico padrão, a matéria escura representa aproximadamente 27% de todo o conteúdo de massa e energia do universo, enquanto a matéria comum (a que forma estrelas, planetas e tudo que vemos) representa apenas cerca de 5%.
+
+--------------------------------------------------
+
+id="nasa_mat_0002"
+[A DESCOBERTA HISTÓRICA: CURVAS DE ROTAÇÃO]
+
+Na década de 1970, a astrônoma Vera Rubin estudou a velocidade de rotação de estrelas em galáxias espirais e encontrou algo inesperado.
+
+Pela física conhecida, estrelas mais distantes do centro de uma galáxia deveriam orbitar mais lentamente, da mesma forma que planetas mais distantes do Sol orbitam mais devagar. Mas Rubin observou que as estrelas nas bordas das galáxias giravam praticamente na mesma velocidade que as estrelas mais centrais - um padrão chamado "curva de rotação plana".
+
+A única explicação capaz de sustentar essas velocidades era a existência de uma quantidade enorme de massa invisível, distribuída em um halo esférico que envolve cada galáxia muito além de seu disco visível.
+
+--------------------------------------------------
+
+id="nasa_mat_0003"
+[LENTE GRAVITACIONAL: VENDO O INVISÍVEL]
+
+A relatividade geral de Einstein prevê que massa curva o espaço-tempo, fazendo a luz se curvar ao passar perto de objetos massivos. Esse efeito é chamado de lente gravitacional.
+
+Como esse efeito depende apenas da quantidade total de massa (visível ou não), astrônomos podem usá-lo para mapear onde a massa realmente está concentrada em um aglomerado de galáxias - mesmo que essa massa não brilhe.
+
+Um dos exemplos mais famosos é o Aglomerado da Bala (Bullet Cluster), formado pela colisão de dois aglomerados de galáxias. Observações combinando raios X e lente gravitacional mostraram que a maior parte da massa estava separada do gás visível quente - exatamente o que se esperaria se a matéria escura, e não o gás comum, dominasse a massa total do sistema.
+
+--------------------------------------------------
+
+id="nasa_mat_0004"
+[MATÉRIA ESCURA NÃO É ENERGIA ESCURA]
+
+É comum confundir matéria escura com energia escura, mas são conceitos completamente diferentes:
+
+* Matéria escura age através da gravidade, ajudando a manter galáxias e aglomerados unidos - funciona como uma "cola" gravitacional adicional.
+* Energia escura é responsável pela expansão acelerada do universo - funciona como um efeito repulsivo em larga escala, empurrando o espaço para se expandir cada vez mais rápido.
+
+No modelo cosmológico padrão (chamado Lambda-CDM), o universo é composto aproximadamente por 5% de matéria comum, 27% de matéria escura e 68% de energia escura.
+
+--------------------------------------------------
+
+id="nasa_mat_0005"
+[O QUE AINDA NÃO SABEMOS]
+
+Apesar de décadas de evidências gravitacionais sólidas e independentes (curvas de rotação, lentes gravitacionais, radiação cósmica de fundo, formação de estruturas em grande escala), a identidade física da matéria escura permanece desconhecida.
+
+Candidatos teóricos incluem partículas massivas de interação fraca (WIMPs) e partículas hipotéticas chamadas áxions. Diversos experimentos ao redor do mundo, incluindo detectores subterrâneos de altíssima sensibilidade, buscam detectar diretamente essas partículas - até agora, sem sucesso confirmado, o que mantém a matéria escura como um dos maiores mistérios abertos da física moderna.
+
+--------------------------------------------------

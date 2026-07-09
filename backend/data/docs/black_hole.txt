@@ -1,0 +1,61 @@
+[TÓPICO: O QUE SÃO BURACOS NEGROS]
+
+Buracos negros são objetos cósmicos extremamente densos, formados por grandes concentrações de matéria comprimidas em espaços muito pequenos. Apesar do nome, não são buracos, mas regiões com gravidade tão intensa que nem a luz consegue escapar.
+
+O limite dessa região é chamado horizonte de eventos, que não é uma superfície física, mas uma fronteira gravitacional.
+
+--------------------------------------------------
+
+id="nasa_bh_0002"
+[DETECÇÃO DE BURACOS NEGROS]
+
+Buracos negros não emitem nem refletem luz, sendo invisíveis diretamente aos telescópios.
+
+Eles são detectados pelos efeitos que causam no ambiente:
+
+- Discos de acreção emitem radiação (incluindo raios X)
+- Estrelas orbitando massas invisíveis revelam sua presença
+- Ondas gravitacionais são geradas por colisões de objetos massivos
+- Lente gravitacional distorce a luz de objetos distantes
+
+--------------------------------------------------
+
+id="nasa_bh_0003"
+[MITOS SOBRE BURACOS NEGROS]
+
+Buracos negros NÃO são:
+
+- Buracos de minhoca ou atalhos espaciais
+- Aspiradores cósmicos que sugam tudo ao redor
+
+Na realidade, a gravidade deles se comporta como qualquer outro objeto de mesma massa quando visto de longe.
+
+--------------------------------------------------
+
+id="nasa_bh_0004"
+[PROPRIEDADES IMPORTANTES]
+
+- Buraco negro mais próximo: Gaia BH1 (~1.500 anos-luz)
+- Mais distante: QSO J0313-1806 (~13 bilhões de anos-luz)
+- Maior: TON 618 (~66 bilhões de massas solares)
+- Menor: ~3,8 massas solares
+- Todos os buracos negros giram
+- GRS 1915+105: ~1000 rotações por segundo
+
+--------------------------------------------------
+
+id="nasa_bh_0005"
+[FENÔMENOS EXTREMOS]
+
+- Espaguetificação: alongamento extremo da matéria por forças gravitacionais
+- Buracos negros podem acelerar partículas próximas à velocidade da luz
+- Substituir o Sol por um buraco negro não mudaria órbitas, apenas reduziria a temperatura do sistema
+
+--------------------------------------------------
+
+id="nasa_bh_0006"
+[FORMAÇÃO E CONTEXTO GALÁCTICO]
+
+- Buracos negros se formam após supernovas de estrelas massivas
+- A maioria das galáxias possui buracos negros supermassivos no centro
+- O da Via Láctea é o Sagitário A*, com ~4 milhões de massas solares
