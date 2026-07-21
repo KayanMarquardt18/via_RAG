@@ -1,0 +1,35 @@
+id="radio_astronomy_0001"
+[O QUE É RADIOASTRONOMIA]
+Radioastronomia é o ramo da astronomia que estuda objetos celestes através da detecção de ondas de rádio que eles emitem naturalmente.
+Diferente da luz visível, as ondas de rádio conseguem atravessar nuvens de poeira interestelar, permitindo observar regiões escondidas da vista óptica.
+Ela permitiu descobertas fundamentais, como os pulsares, a radiação cósmica de fundo e a estrutura de galáxias em rádio frequências.
+--------------------------------------------------
+id="radio_astronomy_0002"
+[RADIOTELESCÓPIOS]
+Radiotelescópios são antenas, geralmente em forma de grandes pratos parabólicos, projetadas para captar ondas de rádio vindas do espaço.
+Como as ondas de rádio têm comprimentos muito maiores que a luz visível, os radiotelescópios costumam ser fisicamente enormes para atingir boa resolução.
+Exemplos notáveis incluem o Very Large Array nos Estados Unidos e o radiotelescópio FAST na China, um dos maiores pratos únicos do mundo.
+--------------------------------------------------
+id="radio_astronomy_0003"
+[INTERFEROMETRIA]
+Interferometria é uma técnica que combina sinais de vários radiotelescópios separados para simular um único telescópio muito maior.
+Isso melhora enormemente a resolução angular das observações, permitindo detalhes que um único prato não conseguiria captar sozinho.
+O Event Horizon Telescope, que capturou a primeira imagem direta de um buraco negro, usa interferometria combinando radiotelescópios espalhados por todo o planeta.
+--------------------------------------------------
+id="radio_astronomy_0004"
+[PULSARES]
+Pulsares são estrelas de nêutrons altamente magnetizadas e em rotação rápida, que emitem feixes de ondas de rádio a partir de seus polos magnéticos.
+Como a rotação e o alinhamento do feixe são regulares, os pulsares são observados como pulsos de rádio extremamente precisos, quase como um farol cósmico.
+Sua descoberta em 1967 foi um marco da radioastronomia, e pulsares continuam sendo usados como relógios naturais de altíssima precisão para testes de física fundamental.
+--------------------------------------------------
+id="radio_astronomy_0005"
+[LINHA DE 21 CM DO HIDROGÊNIO]
+A linha de 21 centímetros é uma emissão de rádio característica do hidrogênio neutro, resultado de uma transição energética muito específica no átomo.
+Ela é fundamental para mapear a distribuição de gás hidrogênio em galáxias, incluindo regiões que não emitem luz visível suficiente para serem vistas de outra forma.
+Essa técnica ajudou a revelar a estrutura espiral da Via Láctea e é usada para estudar galáxias distantes e o universo primordial.
+--------------------------------------------------
+id="radio_astronomy_0006"
+[RÁPIDAS EXPLOSÕES DE RÁDIO]
+Rápidas explosões de rádio, conhecidas como FRBs, são pulsos de rádio extremamente intensos e breves, durando geralmente apenas milissegundos.
+Sua origem ainda não é totalmente compreendida, mas evidências apontam para magnetares, um tipo de estrela de nêutrons com campos magnéticos extraordinariamente fortes, como possíveis fontes.
+A maioria dos FRBs detectados vem de galáxias distantes, tornando seu estudo útil também para investigar a matéria distribuída no espaço intergaláctico.

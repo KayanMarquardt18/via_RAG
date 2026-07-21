@@ -1,0 +1,35 @@
+id="cosmology_0001"
+[O QUE É COSMOLOGIA]
+Cosmologia é o estudo científico da origem, estrutura, evolução e destino final do universo como um todo.
+Ela combina observações astronômicas com física teórica, especialmente relatividade geral e física de partículas.
+O modelo cosmológico atualmente mais aceito é conhecido como modelo Lambda-CDM, que descreve um universo em expansão dominado por matéria escura e energia escura.
+--------------------------------------------------
+id="cosmology_0002"
+[EXPANSÃO DO UNIVERSO]
+O universo está em expansão, o que significa que as distâncias entre galáxias distantes aumentam com o tempo.
+Essa expansão foi descoberta observacionalmente por Edwin Hubble na década de 1920, ao notar que galáxias distantes se afastam de nós com velocidades proporcionais à sua distância.
+A taxa dessa expansão é chamada de constante de Hubble e continua sendo medida e refinada por diferentes métodos observacionais.
+--------------------------------------------------
+id="cosmology_0003"
+[RADIAÇÃO CÓSMICA DE FUNDO]
+A radiação cósmica de fundo em micro-ondas é um resquício de luz do universo primordial, emitida cerca de 380 mil anos após o Big Bang.
+Antes desse momento, o universo era opaco, denso demais para a luz viajar livremente; depois, tornou-se transparente à medida que átomos neutros se formaram.
+Pequenas variações de temperatura nessa radiação fornecem informações valiosas sobre a estrutura inicial do universo e a origem das galáxias.
+--------------------------------------------------
+id="cosmology_0004"
+[MATÉRIA ESCURA]
+Matéria escura é uma forma de matéria que não emite, absorve ou reflete luz, sendo detectada apenas por seus efeitos gravitacionais.
+Sua existência é inferida a partir da rotação de galáxias, do comportamento de aglomerados de galáxias e de efeitos de lente gravitacional.
+Estima-se que a matéria escura corresponda a uma parcela muito maior da massa do universo do que a matéria comum que forma estrelas, planetas e seres vivos.
+--------------------------------------------------
+id="cosmology_0005"
+[ENERGIA ESCURA]
+Energia escura é o nome dado a uma componente misteriosa responsável pela aceleração da expansão do universo.
+Foi identificada no final da década de 1990, quando observações de supernovas distantes mostraram que a expansão do universo não estava desacelerando, mas acelerando.
+Sua natureza exata ainda é desconhecida, sendo um dos maiores problemas em aberto na física e cosmologia modernas.
+--------------------------------------------------
+id="cosmology_0006"
+[DESTINO DO UNIVERSO]
+O destino final do universo depende da quantidade e do comportamento da energia escura e da matéria que ele contém.
+Cenários possíveis incluem expansão eterna e cada vez mais rápida, um "Big Freeze" com resfriamento gradual, ou cenários mais extremos como o "Big Rip", em que a expansão se torna tão intensa que rasgaria até estruturas atômicas.
+Atualmente, as observações favorecem um cenário de expansão acelerada contínua, embora incertezas sobre a energia escura mantenham outras possibilidades em aberto.

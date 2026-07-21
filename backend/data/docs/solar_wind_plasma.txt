@@ -1,0 +1,35 @@
+id="solar_wind_plasma_0001"
+[O QUE É O VENTO SOLAR]
+O vento solar é um fluxo contínuo de partículas carregadas, principalmente prótons e elétrons, ejetadas da coroa solar em altíssima velocidade.
+Ele se espalha por todo o Sistema Solar, criando uma bolha chamada heliosfera que envolve o Sol e os planetas.
+Sua velocidade típica varia entre 300 e 800 quilômetros por segundo, dependendo da atividade solar.
+--------------------------------------------------
+id="solar_wind_plasma_0002"
+[PLASMA NO ESPAÇO]
+Plasma é o quarto estado da matéria, formado por partículas ionizadas, elétrons livres e íons positivos, altamente sensível a campos elétricos e magnéticos.
+A maior parte da matéria visível no universo, incluindo estrelas e o meio interestelar, está no estado de plasma.
+O comportamento do plasma é regido pela magnetohidrodinâmica, que combina princípios de fluidos com eletromagnetismo.
+--------------------------------------------------
+id="solar_wind_plasma_0003"
+[CAMPO MAGNÉTICO SOLAR E HELIOSFERA]
+O Sol possui um campo magnético complexo que é transportado pelo vento solar por todo o Sistema Solar, formando o chamado campo magnético interplanetário.
+A heliosfera é a região de influência do vento solar e do campo magnético do Sol, estendendo-se muito além da órbita de Netuno.
+Fora da heliosfera fica o meio interestelar, e a fronteira entre os dois é chamada heliopausa, já cruzada pelas sondas Voyager 1 e 2.
+--------------------------------------------------
+id="solar_wind_plasma_0004"
+[TEMPESTADES SOLARES E EJEÇÕES DE MASSA CORONAL]
+Ejeções de massa coronal são grandes liberações de plasma e campo magnético da coroa solar, frequentemente associadas a explosões solares.
+Quando atingem a Terra, podem causar tempestades geomagnéticas, afetando satélites, redes elétricas e sistemas de comunicação.
+O ciclo de atividade solar, com duração média de cerca de 11 anos, influencia a frequência e intensidade desses eventos.
+--------------------------------------------------
+id="solar_wind_plasma_0005"
+[AURORAS]
+Auroras são fenômenos luminosos causados pela interação de partículas do vento solar com o campo magnético e a atmosfera da Terra.
+Elas ocorrem principalmente em regiões próximas aos polos magnéticos, onde as linhas de campo magnético canalizam as partículas carregadas para a atmosfera.
+As cores das auroras dependem do tipo de gás atmosférico excitado e da altitude da interação, variando entre verde, vermelho e violeta.
+--------------------------------------------------
+id="solar_wind_plasma_0006"
+[CLIMA ESPACIAL]
+Clima espacial é o termo usado para descrever as condições variáveis no ambiente espacial, influenciadas principalmente pela atividade solar.
+Inclui fenômenos como tempestades geomagnéticas, aumento de radiação e variações na densidade da atmosfera superior da Terra.
+O monitoramento do clima espacial é importante para proteger satélites, astronautas, aviação em altas latitudes e infraestruturas elétricas terrestres.

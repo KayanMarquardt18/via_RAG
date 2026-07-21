@@ -1,0 +1,35 @@
+id="astrobiology_0001"
+[O QUE É ASTROBIOLOGIA]
+Astrobiologia é o campo científico que estuda a origem, evolução, distribuição e futuro da vida no universo, incluindo a possibilidade de vida fora da Terra.
+É uma área interdisciplinar que combina biologia, química, geologia, astronomia e ciência planetária.
+Um dos principais objetivos é entender quais condições são necessárias para a vida surgir e persistir.
+--------------------------------------------------
+id="astrobiology_0002"
+[ZONA HABITÁVEL]
+A zona habitável de uma estrela é a faixa de distâncias onde a temperatura permite a existência de água líquida na superfície de um planeta.
+Também é chamada informalmente de "zona Cachinhos Dourados", por ser nem muito quente nem muito fria.
+A localização exata da zona habitável depende do tipo e da luminosidade da estrela hospedeira.
+--------------------------------------------------
+id="astrobiology_0003"
+[BIOASSINATURAS]
+Bioassinaturas são substâncias, padrões ou fenômenos que podem indicar a presença de vida, passada ou presente.
+Exemplos incluem certos gases atmosféricos como oxigênio e metano em proporções que seriam difíceis de explicar sem processos biológicos.
+Telescópios espaciais modernos podem analisar a composição de atmosferas de exoplanetas em busca dessas assinaturas.
+--------------------------------------------------
+id="astrobiology_0004"
+[EXTREMÓFILOS]
+Extremófilos são organismos que vivem em condições extremas de temperatura, pressão, acidez, salinidade ou radiação.
+Na Terra são encontrados em fontes hidrotermais, lagos hipersalinos, geleiras e até em ambientes com alta radiação.
+Seu estudo amplia a compreensão sobre onde a vida poderia existir em outros mundos, como luas geladas com oceanos subterrâneos.
+--------------------------------------------------
+id="astrobiology_0005"
+[ALVOS DO SISTEMA SOLAR PARA ASTROBIOLOGIA]
+Marte é estudado por evidências de água líquida no passado e possíveis nichos habitáveis no subsolo.
+Europa e Encélado, luas de Júpiter e Saturno respectivamente, possuem oceanos de água líquida sob crostas de gelo, aquecidos por forças de maré.
+Titã, lua de Saturno, tem lagos de metano líquido e uma química orgânica complexa, sendo considerado um laboratório natural para estudar química prebiótica.
+--------------------------------------------------
+id="astrobiology_0006"
+[PANSPERMIA]
+Panspermia é a hipótese de que a vida, ou seus blocos construtores básicos, pode se espalhar entre corpos celestes através de asteroides, cometas ou poeira espacial.
+É uma ideia especulativa que tenta explicar como a vida poderia ter chegado à Terra ou se espalhado para outros lugares.
+Evidências de moléculas orgânicas complexas em meteoritos e cometas dão algum suporte à possibilidade de transporte interplanetário desses compostos.

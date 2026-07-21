@@ -1,0 +1,35 @@
+id="known_galaxies_0001"
+[GALÁXIA DE ANDRÔMEDA]
+Andrômeda (M31) é a galáxia espiral grande mais próxima da Via Láctea, distante cerca de 2,5 milhões de anos-luz.
+Ela é maior que a Via Láctea em diâmetro, contendo possivelmente mais de um trilhão de estrelas.
+Andrômeda e a Via Láctea estão se aproximando uma da outra devido à gravidade mútua, e uma colisão entre as duas é esperada daqui a bilhões de anos.
+--------------------------------------------------
+id="known_galaxies_0002"
+[GALÁXIA DO TRIÂNGULO]
+A Galáxia do Triângulo (M33) é a terceira maior galáxia do Grupo Local, depois de Andrômeda e da Via Láctea.
+É uma galáxia espiral menor, com cerca de 60.000 anos-luz de diâmetro, e pode ser um satélite gravitacionalmente ligado a Andrômeda.
+É visível a olho nu em condições de céu muito escuro, sendo um dos objetos mais distantes observáveis sem telescópio.
+--------------------------------------------------
+id="known_galaxies_0003"
+[NUVENS DE MAGALHÃES]
+A Grande Nuvem de Magalhães e a Pequena Nuvem de Magalhães são galáxias anãs irregulares que orbitam a Via Láctea.
+Elas são visíveis a olho nu no hemisfério sul e foram usadas historicamente como referência de navegação.
+Ambas estão conectadas por uma ponte de gás chamada Ponte Magalhânica, resultado da interação gravitacional entre elas e com a Via Láctea.
+--------------------------------------------------
+id="known_galaxies_0004"
+[GALÁXIA DO SOMBRERO]
+A Galáxia do Sombrero (M104) é conhecida por seu disco brilhante cercado por uma faixa de poeira escura, que lembra a aba de um chapéu.
+Está localizada a cerca de 28 milhões de anos-luz de distância, na constelação de Virgem.
+Abriga um buraco negro supermassivo central com massa estimada em bilhões de vezes a massa do Sol.
+--------------------------------------------------
+id="known_galaxies_0005"
+[GALÁXIAS ATIVAS E QUASARES]
+Algumas galáxias possuem núcleos extremamente brilhantes, chamados núcleos ativos de galáxias (AGN), alimentados por buracos negros supermassivos que acretam matéria.
+Quasares são o tipo mais luminoso de AGN, podendo brilhar mais que centenas de galáxias inteiras juntas.
+Eles são observados principalmente em distâncias cosmológicas muito grandes, o que significa que representam galáxias em estágios iniciais do universo.
+--------------------------------------------------
+id="known_galaxies_0006"
+[GALÁXIAS ANÃS]
+Galáxias anãs são sistemas muito menores que galáxias como a Via Láctea, contendo tipicamente entre alguns milhões e alguns bilhões de estrelas.
+Muitas orbitam galáxias maiores como satélites, e algumas podem ser eventualmente absorvidas por processos de fusão gravitacional.
+São importantes para entender a formação de galáxias maiores, pois modelos cosmológicos sugerem que galáxias grandes cresceram por fusões sucessivas de sistemas menores.

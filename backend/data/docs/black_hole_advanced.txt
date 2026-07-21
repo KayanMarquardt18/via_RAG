@@ -1,0 +1,35 @@
+id="black_hole_advanced_0001"
+[HORIZONTE DE EVENTOS]
+O horizonte de eventos é a fronteira ao redor de um buraco negro além da qual nada, nem mesmo a luz, consegue escapar da atração gravitacional.
+Ele não é uma superfície física, mas um limite matemático definido pela intensidade do campo gravitacional em relação à velocidade da luz.
+O tamanho do horizonte de eventos é proporcional à massa do buraco negro, sendo maior quanto mais massivo o objeto.
+--------------------------------------------------
+id="black_hole_advanced_0002"
+[SINGULARIDADE]
+No centro de um buraco negro, segundo a relatividade geral clássica, existe uma singularidade: um ponto de densidade infinita onde as leis conhecidas da física deixam de funcionar de forma previsível.
+A verdadeira natureza da singularidade ainda não é compreendida, pois exigiria uma teoria que unificasse gravidade e mecânica quântica.
+Muitos físicos acreditam que uma futura teoria de gravidade quântica substituirá a ideia de singularidade infinita por uma descrição física mais completa.
+--------------------------------------------------
+id="black_hole_advanced_0003"
+[TIPOS DE BURACOS NEGROS]
+Buracos negros estelares se formam do colapso gravitacional de estrelas massivas ao final de sua vida, geralmente com massas de algumas a dezenas de vezes a massa do Sol.
+Buracos negros supermassivos, encontrados no centro da maioria das grandes galáxias, podem ter massas de milhões a bilhões de vezes a massa do Sol.
+Buracos negros de massa intermediária, entre essas duas categorias, são mais raros e difíceis de detectar, mas evidências de sua existência vêm se acumulando.
+--------------------------------------------------
+id="black_hole_advanced_0004"
+[ONDAS GRAVITACIONAIS]
+Ondas gravitacionais são ondulações no próprio tecido do espaço-tempo, previstas pela relatividade geral e causadas por eventos cósmicos extremamente violentos.
+A fusão de dois buracos negros é uma das principais fontes dessas ondas, liberando uma quantidade imensa de energia em frações de segundo.
+A primeira detecção direta de ondas gravitacionais ocorreu em 2015, confirmando essa previsão centenária e abrindo uma nova forma de observar o universo.
+--------------------------------------------------
+id="black_hole_advanced_0005"
+[DISCO DE ACREÇÃO E JATOS RELATIVÍSTICOS]
+Quando matéria cai em direção a um buraco negro, ela geralmente forma um disco de acreção giratório, aquecido a temperaturas extremas por atrito e forças gravitacionais.
+Esse disco pode emitir intensa radiação, incluindo raios X, tornando buracos negros detectáveis mesmo sem observar o próprio buraco negro diretamente.
+Alguns buracos negros também produzem jatos relativísticos, feixes estreitos de partículas ejetadas a velocidades próximas à da luz, perpendiculares ao disco de acreção.
+--------------------------------------------------
+id="black_hole_advanced_0006"
+[RADIAÇÃO HAWKING]
+A radiação Hawking é um processo teórico proposto por Stephen Hawking, segundo o qual buracos negros emitem lentamente radiação devido a efeitos quânticos próximos ao horizonte de eventos.
+Esse processo implicaria que buracos negros perdem massa muito lentamente ao longo de escalas de tempo extremamente longas, podendo eventualmente evaporar por completo.
+Para buracos negros de massa estelar ou maior, esse processo é tão lento que seria completamente insignificante em comparação com a idade atual do universo.

@@ -1,0 +1,44 @@
+id="nasa_nsp_0001"
+[TÓPICO: O QUE SÃO ESTRELAS DE NÊUTRONS]
+
+Estrelas de nêutrons são os remanescentes colapsados de estrelas massivas que explodiram como supernovas. Quando o núcleo de uma estrela massiva colapsa sob sua própria gravidade, os prótons e elétrons são forçados a se combinar em nêutrons, formando um objeto de densidade extrema.
+
+Uma estrela de nêutrons típica tem massa entre 1,4 e 2 vezes a massa do Sol, mas comprimida em um diâmetro de apenas cerca de 20 quilômetros — menor que muitas cidades. Isso significa que uma colher de chá de seu material pesaria bilhões de toneladas. São os objetos mais densos do universo, exceto pelos buracos negros.
+
+--------------------------------------------------
+
+id="nasa_nsp_0002"
+[PULSARES: FARÓIS CÓSMICOS]
+
+Pulsares são estrelas de nêutrons em rotação rápida que emitem feixes de radiação eletromagnética a partir de seus polos magnéticos. Como o eixo magnético não coincide com o eixo de rotação, esses feixes varrem o espaço como um farol — e quando um desses feixes aponta para a Terra, radiotelescópios detectam pulsos regulares e precisos.
+
+Os pulsares foram descobertos em 1967 por Jocelyn Bell Burnell e Antony Hewish na Universidade de Cambridge. O sinal era tão regular que inicialmente foi apelidado de LGM-1 ("Little Green Men") antes da explicação astrofísica ser compreendida. Hewish recebeu o Nobel de Física em 1974 pela descoberta, de forma controversa sem Bell Burnell.
+
+--------------------------------------------------
+
+id="nasa_nsp_0003"
+[ROTAÇÃO E PRECISÃO DOS PULSARES]
+
+Pulsares giram com velocidades extraordinárias. O pulsar mais rápido conhecido, PSR J1748-2446ad, completa 716 rotações por segundo — mais rápido que a maioria dos liquidificadores domésticos. Os chamados "pulsares de milissegundos" giram centenas de vezes por segundo.
+
+Essa regularidade extrema torna pulsares alguns dos relógios mais precisos do universo, rivalizando com relógios atômicos terrestres. Essa precisão é tão confiável que pulsares de milissegundos são usados como referências temporais em sistemas de navegação espacial e para detectar ondas gravitacionais de baixíssima frequência.
+
+--------------------------------------------------
+
+id="nasa_nsp_0004"
+[MAGNETARES]
+
+Magnetares são uma subclasse de estrelas de nêutrons com campos magnéticos extraordinariamente intensos, chegando a 10¹⁵ gauss — cerca de um trilhão de vezes o campo magnético da Terra e mil vezes mais forte que um pulsar típico.
+
+Esses campos magnéticos extremos alimentam intensas explosões de raios X e raios gama. Em 27 de dezembro de 2004, um magnetar chamado SGR 1806-20, localizado a 50.000 anos-luz, liberou mais energia em 0,2 segundos do que o Sol emite em 250.000 anos — explosão intensa o suficiente para ionizar a atmosfera superior da Terra, apesar da enorme distância.
+
+--------------------------------------------------
+
+id="nasa_nsp_0005"
+[ESTRELAS DE NÊUTRONS E ONDAS GRAVITACIONAIS]
+
+A fusão de duas estrelas de nêutrons é um dos eventos mais energéticos e informativos do universo. Em 2017, o LIGO e o Virgo detectaram ondas gravitacionais de uma fusão desse tipo (GW170817), e telescópios ao redor do mundo simultaneamente observaram o evento em luz visível, raios X, raios gama e ondas de rádio.
+
+Essa observação confirmou que fusões de estrelas de nêutrons são responsáveis pela criação de elementos pesados como ouro e platina através do "processo r" (captura rápida de nêutrons), respondendo a uma antiga questão sobre a origem desses elementos no universo.
+
+--------------------------------------------------

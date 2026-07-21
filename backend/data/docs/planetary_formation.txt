@@ -1,0 +1,35 @@
+id="planetary_formation_0001"
+[DISCO PROTOPLANETÁRIO]
+Planetas se formam a partir de um disco de gás e poeira que sobra ao redor de uma estrela recém-formada, chamado disco protoplanetário.
+Esse disco resulta do colapso gravitacional de uma nuvem molecular, onde a maior parte do material forma a estrela central e o restante fica em órbita.
+Observações com telescópios modernos já capturaram imagens diretas desses discos ao redor de estrelas jovens, revelando anéis e lacunas onde planetas provavelmente estão se formando.
+--------------------------------------------------
+id="planetary_formation_0002"
+[ACREÇÃO E FORMAÇÃO DE PLANETESIMAIS]
+Partículas de poeira no disco colidem e se aglutinam gradualmente, formando corpos cada vez maiores chamados planetesimais.
+Esses planetesimais podem crescer por colisões sucessivas até formar embriões planetários e, eventualmente, planetas completos.
+Esse processo de crescimento por acúmulo de material é chamado acreção, e pode levar de milhões a dezenas de milhões de anos.
+--------------------------------------------------
+id="planetary_formation_0003"
+[LINHA DE GELO E DIFERENCIAÇÃO DE PLANETAS]
+A linha de gelo é a distância a partir da estrela onde é frio o suficiente para compostos voláteis, como água, se condensarem em forma sólida.
+Planetas rochosos, como a Terra, tendem a se formar dentro dessa linha, onde só materiais com alto ponto de fusão permanecem sólidos.
+Além da linha de gelo, há material suficiente para formar núcleos maiores que podem capturar grandes envelopes de gás, dando origem a planetas gigantes gasosos e gelados.
+--------------------------------------------------
+id="planetary_formation_0004"
+[FORMAÇÃO DE PLANETAS GIGANTES]
+Planetas gigantes gasosos, como Júpiter e Saturno, provavelmente se formaram a partir de núcleos rochosos e gelados que cresceram rápido o suficiente para capturar grandes quantidades de gás do disco protoplanetário.
+Planetas gigantes gelados, como Urano e Netuno, têm envelopes de gás proporcionalmente menores, sugerindo formação mais lenta ou em condições diferentes de disponibilidade de material.
+A localização e migração desses planetas gigantes influenciam fortemente a arquitetura final de todo o sistema planetário.
+--------------------------------------------------
+id="planetary_formation_0005"
+[MIGRAÇÃO PLANETÁRIA]
+Planetas não necessariamente permanecem na órbita onde se formaram; interações gravitacionais com o disco de gás remanescente podem fazê-los migrar para dentro ou para fora.
+Esse processo ajuda a explicar a existência de "Júpiteres quentes", planetas gigantes gasosos encontrados em órbitas extremamente próximas de suas estrelas.
+A migração planetária também pode causar instabilidades dinâmicas, ejetando outros corpos do sistema ou alterando drasticamente suas órbitas.
+--------------------------------------------------
+id="planetary_formation_0006"
+[BOMBARDEAMENTO PESADO E ESTÁGIOS FINAIS]
+Nos estágios finais da formação planetária, colisões entre corpos remanescentes ainda são comuns, incluindo grandes impactos que podem alterar drasticamente um planeta.
+Acredita-se que a Lua da Terra tenha se formado a partir de material ejetado por uma colisão gigante entre a Terra primitiva e um corpo do tamanho de Marte.
+Após a formação principal, sistemas planetários passam por fases de "limpeza" orbital, onde planetesimais restantes são ejetados, capturados ou colidem com os planetas já formados.

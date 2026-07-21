@@ -1,0 +1,35 @@
+id="nebulae_0001"
+[O QUE SÃO NEBULOSAS]
+Nebulosas são vastas nuvens de gás e poeira no espaço interestelar, compostas principalmente de hidrogênio e hélio.
+Podem ser regiões de formação de novas estrelas ou os restos de estrelas que já terminaram seu ciclo de vida.
+Seu brilho pode vir de luz própria emitida por gás ionizado, luz refletida de estrelas próximas, ou pela ausência de luz quando bloqueiam objetos atrás delas.
+--------------------------------------------------
+id="nebulae_0002"
+[NEBULOSAS DE EMISSÃO]
+Nebulosas de emissão brilham com luz própria porque o gás é ionizado pela radiação intensa de estrelas jovens e quentes próximas.
+A Nebulosa de Órion é um exemplo bem conhecido, sendo visível a olho nu como uma mancha esverdeada na constelação de Órion.
+A cor característica avermelhada de muitas nebulosas de emissão vem da emissão do hidrogênio ionizado.
+--------------------------------------------------
+id="nebulae_0003"
+[NEBULOSAS DE REFLEXÃO]
+Nebulosas de reflexão não emitem luz própria; elas brilham porque refletem a luz de estrelas próximas, de forma parecida com poeira iluminada por um facho de luz.
+Costumam ter tonalidade azulada, já que a poeira espalha luz azul com mais eficiência do que luz vermelha.
+Frequentemente aparecem associadas a regiões de formação estelar, junto com nebulosas de emissão.
+--------------------------------------------------
+id="nebulae_0004"
+[NEBULOSAS PLANETÁRIAS]
+Nebulosas planetárias são formadas quando estrelas de massa baixa a intermediária, como o Sol, ejetam suas camadas externas no final da vida.
+O nome é histórico e enganoso: elas não têm relação com planetas, mas receberam esse nome porque pareciam discos esféricos como planetas quando vistas em telescópios antigos.
+O núcleo remanescente da estrela se torna uma anã branca, que ilumina o gás ejetado ao redor.
+--------------------------------------------------
+id="nebulae_0005"
+[REMANESCENTES DE SUPERNOVA]
+Quando uma estrela massiva explode em supernova, o material ejetado forma uma nebulosa em expansão chamada remanescente de supernova.
+A Nebulosa do Caranguejo é um exemplo famoso, resultado de uma explosão observada por astrônomos na Terra no ano de 1054.
+Esses remanescentes espalham elementos pesados no meio interestelar, enriquecendo o material que formará futuras estrelas e planetas.
+--------------------------------------------------
+id="nebulae_0006"
+[NEBULOSAS ESCURAS]
+Nebulosas escuras, ou nebulosas de absorção, são nuvens densas de poeira que bloqueiam a luz de estrelas e objetos atrás delas.
+A Nebulosa Cabeça de Cavalo é um exemplo conhecido, aparecendo como uma silhueta escura contra o brilho de uma nebulosa de emissão ao fundo.
+Essas regiões densas são frequentemente berçários estelares, onde novas estrelas se formam a partir do colapso gravitacional do gás e da poeira.
