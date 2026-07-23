@@ -39,7 +39,7 @@ INFORMAÇÕES DISPONÍVEIS:
 EXPLICAÇÃO:"""
 
     resposta = llm_client.chat.completions.create(
-        model="qwen/qwen3-4b-2507",
+        model="qwen/qwen3.6-27b",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3
     )
@@ -70,8 +70,9 @@ def _consultar_rag(pergunta, historico):
         if ultima_pergunta:
             query_busca = f"{ultima_pergunta} {pergunta}"
 
-    chunks, _ = buscar_contexto(query_busca)
+    chunks, metadados = buscar_contexto(query_busca)
     contexto = "\n\n---\n\n".join(chunks)
+    fontes = sorted(set(m["source"] for m in metadados))
 
     apresentacao = ""
     if not historico:
@@ -86,7 +87,6 @@ sobre o universo. Responda com base nas informações abaixo, mas de forma natur
 como se estivesse explicando pra um amigo, não escrevendo um relatório.
 
 {apresentacao}Regras:
-Regras:
 1. Nunca cite "o contexto" ou "as informações fornecidas" — fale a informação diretamente,
    como se você já soubesse, sem mencionar de onde veio.
 2. Baseie sua resposta ESTRITAMENTE nas informações disponíveis abaixo. Não adicione fatos,
@@ -96,8 +96,19 @@ Regras:
 4. Use frases curtas e diretas, tom leve e curioso — pode soltar a linguagem um pouco,
    sem perder precisão científica.
 5. Continue naturalmente a conversa, sem repetir estruturas formais a cada resposta.
+6. Ao explicar um conceito pela primeira vez na conversa, comece com uma definição direta e
+   objetiva do que ELE É, antes de mencionar comparações com o que ele não é ou mitos relacionados.
+7. Indique ao usuário que ele pode fazer novas perguntas relacionadas, mas APENAS sobre tópicos
+   que você sabe estarem disponíveis no contexto/base de dados fornecida (ex: estrutura,
+   classificação, quasares, blazares, discos de acreção). Nunca sugira explorar um tópico que
+   não esteja coberto pela sua base de conhecimento atual. Não invente tópicos que não estejam
+   no contexto. Cite as fontes ao responder no final, mas não no meio da resposta. Cite apenas
+   os nomes dos arquivos, sem links ou caminhos.
+
 INFORMAÇÕES DISPONÍVEIS:
 {contexto}
+
+FONTES DISPONÍVEIS PARA CITAÇÃO: {', '.join(fontes)}
 
 PERGUNTA: {pergunta}"""
 
@@ -111,7 +122,7 @@ PERGUNTA: {pergunta}"""
         mensagens.append({"role": "user", "content": primeira_mensagem})
 
     resposta = llm_client.chat.completions.create(
-        model="qwen/qwen3-4b-2507",
+        model="qwen/qwen3.6-27b",
         messages=mensagens,
         temperature=0.3
     )

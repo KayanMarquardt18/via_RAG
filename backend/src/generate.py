@@ -4,49 +4,41 @@ import chromadb
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 
-#load_dotenv()  # lê o arquivo .env e carrega as variáveis
+load_dotenv()  # lê o arquivo .env e carrega as variáveis
 
 print("Carregando modelo de embeddings...")
 embed_model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
 
 print("Conectando ao ChromaDB...")
-chroma_client = chromadb.HttpClient(host="localhost", port=8000)
+chroma_client = chromadb.HttpClient(
+    host=os.getenv("CHROMA_HOST", "localhost"),
+    port=int(os.getenv("CHROMA_PORT", "8000"))
+)
 collection = chroma_client.get_collection("nasa_docs")
 
-
-
 llm_client = OpenAI(
-    base_url="http://localhost:1234/v1",
-    api_key="lm-studio")  # qualquer valor funciona aqui, o LM Studio não valida 
-
-# Conecta no LM Studio como se fosse a API da OpenAI,
-# só trocando a base_url pro nosso servidor local.
-#llm_client = OpenAI(
-    #api_key=os.getenv("OPENAI_KEY")
-    # sem base_url — a lib já usa o endereço da OpenAI por padrão
-#)
+    base_url="https://api.groq.com/openai/v1",
+    api_key=os.getenv("GROQ_API_KEY")
+)
+# Conecta na Groq como se fosse a API da OpenAI,
+# só trocando a base_url e a api_key.
 
 
 def buscar_contexto(pergunta, n_results=3):
     embedding_pergunta = embed_model.encode(pergunta).tolist()
-
     resultado = collection.query(
         query_embeddings=[embedding_pergunta],
         n_results=n_results
     )
-
     documentos = resultado["documents"][0]
     metadados = resultado["metadatas"][0]
-
     return documentos, metadados
 
 
 def montar_prompt(pergunta, chunks):
     contexto = "\n\n---\n\n".join(chunks)
-
     prompt = f"""Você é um assistente especializado em astronomia.
 Responda à pergunta do usuário usando APENAS as informações do contexto abaixo.
-
 Regras:
 1. Se o contexto contiver a resposta, responda de forma clara e completa.
 2. Se o contexto NÃO contiver a resposta direta, mas tiver informações relacionadas,
@@ -62,49 +54,37 @@ Regras:
    de dados fornecida (ex: estrutura, classificação, quasares, blazares,
    discos de acreção). Nunca sugira explorar um tópico que não esteja
    coberto pela sua base de conhecimento atual.
-
 CONTEXTO:
 {contexto}
-
 PERGUNTA:
 {pergunta}
-
 RESPOSTA:"""
-
     return prompt
 
 
 def gerar_resposta(pergunta):
     chunks, metadados = buscar_contexto(pergunta)
     prompt = montar_prompt(pergunta, chunks)
-
     resposta = llm_client.chat.completions.create(
-        model="qwen/qwen3-4b-2507",
+        model="qwen/qwen3.6-27b",
         messages=[
             {"role": "user", "content": prompt}
         ],
         temperature=0.3
     )
-
     texto_resposta = resposta.choices[0].message.content
-
     # Extrai os nomes de arquivo únicos usados como fonte
     fontes = sorted(set(m["source"] for m in metadados))
-
     return texto_resposta, fontes
 
 
 if __name__ == "__main__":
     while True:
         pergunta = input("\nPergunta: ")
-
         if pergunta.lower() == "sair":
             break
-
         print("\nBuscando contexto e gerando resposta...\n")
-
         resposta, fontes = gerar_resposta(pergunta)
-
         print("RESPOSTA:")
         print(resposta)
         print(f"\n📚 Fontes consultadas: {', '.join(fontes)}")
