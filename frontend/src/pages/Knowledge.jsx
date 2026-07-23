@@ -18,7 +18,8 @@ export default function Knowledge() {
     if (!pergunta.trim() || carregando) return;
 
     const perguntaAtual = pergunta;
-    setHistorico((h) => [...h, { autor: "user", texto: perguntaAtual }]);
+    const idUser = crypto.randomUUID();
+    setHistorico((h) => [...h, { id: idUser, autor: "user", texto: perguntaAtual }]);
     setPergunta("");
     setCarregando(true);
 
@@ -30,11 +31,18 @@ export default function Knowledge() {
       }));
 
       const data = await perguntarRAG(perguntaAtual, historicoFormatado);
-      setHistorico((h) => [...h, { autor: "ia", texto: data.resposta }]);
+      setHistorico((h) => [
+        ...h,
+        { id: crypto.randomUUID(), autor: "ia", texto: data.resposta },
+      ]);
     } catch {
       setHistorico((h) => [
         ...h,
-        { autor: "erro", texto: "Não consegui falar com o backend. Confirme se a API está no ar." },
+        {
+          id: crypto.randomUUID(),
+          autor: "erro",
+          texto: "Não consegui falar com o backend. Confirme se a API está no ar.",
+        },
       ]);
     } finally {
       setCarregando(false);
@@ -66,8 +74,8 @@ export default function Knowledge() {
               Experimente: "O que são AGN?" ou "Como o universo começou?"
             </p>
           )}
-          {historico.map((msg, i) => (
-            <div key={i} className={`chat-bubble chat-bubble--${msg.autor}`}>
+          {historico.map((msg) => (
+            <div key={msg.id} className={`chat-bubble chat-bubble--${msg.autor}`}>
               {msg.texto}
             </div>
           ))}

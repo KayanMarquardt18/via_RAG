@@ -17,7 +17,7 @@ export default function About() {
         <h2>Kayan Marquardt</h2>
         <p>
           Sou do Rio Grande do Sul, trabalho com Análise de Dados e Customer
-          Success, e curso Ciência de Dados. O via_RAG nasceu de uma curiosidade
+          Success, e curso Ciência de Dados. O ViaRAG nasceu de uma curiosidade
           simples: entender de verdade como sistemas de IA funcionam por dentro,
           em vez de só usá-los prontos.
         </p>

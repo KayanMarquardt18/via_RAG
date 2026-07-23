@@ -1,6 +1,10 @@
+import os
+from dotenv import load_dotenv
 import chromadb
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
+
+#load_dotenv()  # lê o arquivo .env e carrega as variáveis
 
 print("Carregando modelo de embeddings...")
 embed_model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
@@ -9,12 +13,18 @@ print("Conectando ao ChromaDB...")
 chroma_client = chromadb.HttpClient(host="localhost", port=8000)
 collection = chroma_client.get_collection("nasa_docs")
 
-# Conecta no LM Studio como se fosse a API da OpenAI,
-# só trocando a base_url pro nosso servidor local.
+
+
 llm_client = OpenAI(
     base_url="http://localhost:1234/v1",
-    api_key="lm-studio"  # qualquer valor funciona aqui, o LM Studio não valida
-)
+    api_key="lm-studio")  # qualquer valor funciona aqui, o LM Studio não valida 
+
+# Conecta no LM Studio como se fosse a API da OpenAI,
+# só trocando a base_url pro nosso servidor local.
+#llm_client = OpenAI(
+    #api_key=os.getenv("OPENAI_KEY")
+    # sem base_url — a lib já usa o endereço da OpenAI por padrão
+#)
 
 
 def buscar_contexto(pergunta, n_results=3):

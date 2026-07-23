@@ -5,7 +5,7 @@ export default function Home() {
     <div className="page home-page">
 
       <section className="hero">
-        <span className="eyebrow">via_RAG · observatório de dados</span>
+        <span className="eyebrow">viaRAG · observatório de dados</span>
         <h1 className="hero-title">
           Duas formas de IA, <br />
           conhecimento e análise juntos.

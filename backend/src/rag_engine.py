@@ -1,9 +1,50 @@
 from src.generate import buscar_contexto, llm_client
 
 
-def get_rag_explanation(class_name):
-    pergunta = f"O que é um objeto do tipo {class_name} na astronomia?"
-    return _consultar_rag(pergunta, historico=[])
+def get_rag_explanation(class_name, valores=None):
+    """
+    Gera uma explicação para o resultado de uma predição do classificador ML.
+    Diferente do chat geral: aqui já sabemos a resposta (veio do modelo),
+    então o LLM nunca deve recusar — só conectar os dados ao contexto.
+    """
+    query_busca = f"características de {class_name.lower()} magnitudes fotometria redshift"
+    chunks, _ = buscar_contexto(query_busca)
+    contexto = "\n\n---\n\n".join(chunks)
+
+    valores_txt = ""
+    if valores:
+        valores_txt = f"\nValores fotométricos do objeto: {valores}\n"
+
+    prompt = f"""Você é ViaBot, um assistente de astronomia batendo um papo casual sobre o resultado
+de um classificador de Machine Learning.
+
+Um modelo já analisou os dados fotométricos de um objeto e concluiu que ele é do tipo: {class_name}
+{valores_txt}
+Use as informações abaixo para explicar de forma natural e conversada por que um objeto com essas
+características costuma ser classificado como {class_name}.
+
+Regras:
+1. Nunca cite "o contexto" ou "as informações fornecidas" — fale como se você já soubesse,
+   sem mencionar de onde veio o conhecimento.
+2. Nunca diga que não existe a inform. Sempre construa uma explicação, conectando
+   os conceitos disponíveis com a classificação {class_name}, mesmo que não haja um termo técnico exato, porém nunca invente fatos ou números que não estejam no contexto, apenas leve o usuário a pesquisar por outros temas que você possui.
+3. Se houver valores fotométricos, relacione-os com a explicação de forma natural.
+4. Fale como quem está contando algo interessante pra um amigo curioso — tom leve, envolvente,
+   frases curtas. Nada de linguagem de relatório.
+5. Seja conciso: 2 a 4 frases, direto ao ponto.
+
+INFORMAÇÕES DISPONÍVEIS:
+{contexto}
+
+EXPLICAÇÃO:"""
+
+    resposta = llm_client.chat.completions.create(
+        model="qwen/qwen3-4b-2507",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.3
+    )
+
+    return resposta.choices[0].message.content
 
 
 def ask_knowledge(pergunta_usuario, historico=None):
@@ -11,10 +52,17 @@ def ask_knowledge(pergunta_usuario, historico=None):
 
 
 def _consultar_rag(pergunta, historico):
-    # Se a pergunta for curta e houver histórico, enriquece a query
-    # combinando com a última pergunta do usuário
     query_busca = pergunta
-    if historico and len(pergunta.split()) <= 6:
+
+    PALAVRAS_REFERENCIA = {
+        "esse", "essa", "esses", "essas", "isso", "disso", "dele", "dela",
+        "deles", "delas", "ele", "ela", "nele", "nela", "aí", "então"
+    }
+
+    palavras_pergunta = set(pergunta.lower().replace("?", "").split())
+    parece_continuacao = bool(palavras_pergunta & PALAVRAS_REFERENCIA)
+
+    if historico and parece_continuacao:
         ultima_pergunta = next(
             (m["texto"] for m in reversed(historico) if m["autor"] == "user"),
             None
@@ -25,83 +73,42 @@ def _consultar_rag(pergunta, historico):
     chunks, _ = buscar_contexto(query_busca)
     contexto = "\n\n---\n\n".join(chunks)
 
-    primeira_mensagem = f"""Você é um assistente de astronomia. Responda APENAS com base no contexto abaixo.
-Se não encontrar a informação, diga claramente. Nunca invente.
-
-CONTEXTO:
-{contexto}
-
-PERGUNTA: {pergunta}"""
-
+    apresentacao = ""
     if not historico:
-        mensagens = [{"role": "user", "content": primeira_mensagem}]
-    else:
-        mensagens = []
-        for msg in historico:
-            role = "assistant" if msg["autor"] == "ia" else "user"
-            mensagens.append({"role": role, "content": msg["texto"]})
-        mensagens.append({"role": "user", "content": primeira_mensagem})
+        apresentacao = """Essa é a primeira mensagem da conversa. Comece se apresentando rapidamente
+como ViaBot, um assistente de astronomia — só uma frase curta e simpática, tipo "Oi, eu sou o ViaBot!" —
+e emende direto na resposta da pergunta, sem enrolar.
 
-    resposta = llm_client.chat.completions.create(
-        model="qwen/qwen3-4b-2507",
-        messages=mensagens,
-        temperature=0.3
-    )
+"""
 
-    return resposta.choices[0].message.content
-    # instrução + contexto juntos na primeira mensagem do user
-    primeira_mensagem = f"""Você é um assistente de astronomia. Responda APENAS com base no contexto abaixo.
-Se não encontrar a informação, diga claramente. Nunca invente.
+    primeira_mensagem = f"""Você é ViaBot, um assistente de astronomia batendo papo com alguém curioso
+sobre o universo. Responda com base nas informações abaixo, mas de forma natural e conversada —
+como se estivesse explicando pra um amigo, não escrevendo um relatório.
 
-CONTEXTO:
-{contexto}
-
-PERGUNTA: {pergunta}"""
-
-    # se não tem histórico, manda só a pergunta com contexto
-    if not historico:
-        mensagens = [{"role": "user", "content": primeira_mensagem}]
-    else:
-        # histórico anterior + nova pergunta com contexto novo
-        mensagens = []
-        for msg in historico:
-            role = "assistant" if msg["autor"] == "ia" else "user"
-            mensagens.append({"role": role, "content": msg["texto"]})
-        mensagens.append({"role": "user", "content": primeira_mensagem})
-
-    resposta = llm_client.chat.completions.create(
-        model="qwen/qwen3-4b-2507",
-        messages=mensagens,
-        temperature=0.3
-    )
-
-    return resposta.choices[0].message.content
-
-    system_prompt = f"""Você é um assistente especializado em astronomia.
-Responda usando APENAS as informações do contexto abaixo.
-
+{apresentacao}Regras:
 Regras:
-1. Se o contexto contiver a resposta, responda de forma clara e completa.
-2. Se o contexto NÃO contiver a resposta direta, mas tiver informações relacionadas,
-   explique o que encontrou e deixe claro que não é uma resposta exata.
-3. Se o contexto não tiver nada relacionado, diga:
-   "Não encontrei essa informação na base de dados disponível."
-4. Nunca invente informações fora do contexto.
-5. Fale de forma envolvente e científica, despertando curiosidade.
-6. Respostas concisas, divididas em parágrafos curtos quando necessário.
-7. Quando o assunto for amplo, sugira novas perguntas — mas apenas sobre tópicos
-   cobertos pelo contexto ou base de conhecimento disponível.
+1. Nunca cite "o contexto" ou "as informações fornecidas" — fale a informação diretamente,
+   como se você já soubesse, sem mencionar de onde veio.
+2. Baseie sua resposta ESTRITAMENTE nas informações disponíveis abaixo. Não adicione fatos,
+   números, datas ou detalhes que não estejam explicitamente ali, mesmo que pareçam plausíveis.
+3. Se a informação disponível não cobrir a pergunta, diga isso de forma simples e direta, tipo
+   "Essa eu não sei te dizer com certeza" — nunca complete a lacuna com conhecimento próprio.
+4. Use frases curtas e diretas, tom leve e curioso — pode soltar a linguagem um pouco,
+   sem perder precisão científica.
+5. Continue naturalmente a conversa, sem repetir estruturas formais a cada resposta.
+INFORMAÇÕES DISPONÍVEIS:
+{contexto}
 
-CONTEXTO ASTRONÔMICO:
-{contexto}"""
+PERGUNTA: {pergunta}"""
 
-    # Monta as mensagens: system + histórico anterior + pergunta atual
-    mensagens = [{"role": "system", "content": system_prompt}]
-
-    for msg in historico:
-        mensagens.append({"role": msg["autor"], "content": msg["texto"]})
-
-    mensagens.append({"role": "user", "content": pergunta})
+    if not historico:
+        mensagens = [{"role": "user", "content": primeira_mensagem}]
+    else:
+        mensagens = []
+        for msg in historico:
+            role = "assistant" if msg["autor"] == "ia" else "user"
+            mensagens.append({"role": role, "content": msg["texto"]})
+        mensagens.append({"role": "user", "content": primeira_mensagem})
 
     resposta = llm_client.chat.completions.create(
         model="qwen/qwen3-4b-2507",

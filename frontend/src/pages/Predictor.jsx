@@ -270,67 +270,74 @@ export default function Predictor() {
       )}
 
       {/* ABA TREINO */}
-      {aba === "treino" && (
-        <div className="treino-content">
-          <p className="lede">
-            Tente adivinhar a classe de cada objeto antes de revelar a resposta.
-            Depois, clique em "Testar no classificador" para comparar com o modelo.
-          </p>
-          {QUIZ.map((q) => {
-            const revelado = revelados[q.id];
-            const chute = chutes[q.id];
-            const acertou = chute === q.resposta;
+{aba === "treino" && (
+  <div className="treino-content">
+    <p className="lede">
+      Tente adivinhar a classe de cada objeto, ou teste direto no classificador
+      quando quiser conferir o resultado.
+    </p>
+    {QUIZ.map((q) => {
+      const revelado = revelados[q.id];
+      const chute = chutes[q.id];
+      const acertou = chute === q.resposta;
 
-            return (
-              <div key={q.id} className="panel quiz-card">
-                <span className="eyebrow">Objeto {q.id}</span>
-                <p className="quiz-desc">{q.descricao}</p>
+      return (
+        <div key={q.id} className="panel quiz-card">
+          <span className="eyebrow">Objeto {q.id}</span>
+          <p className="quiz-desc">{q.descricao}</p>
 
-                <div className="quiz-valores">
-                  {Object.entries(q.valores).map(([k, v]) => (
-                    <div key={k} className="quiz-val">
-                      <span className="quiz-key">{k}</span>
-                      <span className="quiz-num">{v}</span>
-                    </div>
-                  ))}
-                </div>
-
-                {!chute && (
-                  <div className="quiz-chute-btns">
-                    <p style={{ color: "var(--text-dim)", fontSize: "0.88rem", marginBottom: 10 }}>
-                      Qual é a sua resposta?
-                    </p>
-                    {["STAR", "GALAXY", "QSO"].map((c) => (
-                      <button key={c} className="quiz-chute-btn" onClick={() => chutar(q.id, c)}>
-                        {c}
-                      </button>
-                    ))}
-                  </div>
-                )}
-
-                {chute && !revelado && (
-                  <div className="quiz-resultado-chute">
-                    <p>Sua resposta: <strong>{chute}</strong></p>
-                    <button className="quiz-revelar-btn" onClick={() => revelar(q.id)}>
-                      Revelar resposta
-                    </button>
-                  </div>
-                )}
-
-                {revelado && (
-                  <div className={`quiz-gabarito ${acertou ? "quiz-gabarito--acerto" : "quiz-gabarito--erro"}`}>
-                    <p>{acertou ? "Acertou!" : "Errou!"} A resposta é <strong>{q.resposta}</strong></p>
-                    <p className="quiz-dica">{q.dica}</p>
-                    <button className="quiz-testar-btn" onClick={() => preencherClassificador(q.valores)}>
-                      Testar no classificador
-                    </button>
-                  </div>
-                )}
+          <div className="quiz-valores">
+            {Object.entries(q.valores).map(([k, v]) => (
+              <div key={k} className="quiz-val">
+                <span className="quiz-key">{k}</span>
+                <span className="quiz-num">{v}</span>
               </div>
-            );
-          })}
+            ))}
+          </div>
+
+          {/* Chute + Testar sempre disponíveis juntos, desde o início */}
+          {!chute && (
+            <div className="quiz-chute-btns">
+              <p style={{ color: "var(--text-dim)", fontSize: "0.88rem", marginBottom: 10 }}>
+                Qual é a sua resposta?
+              </p>
+              {["STAR", "GALAXY", "QSO"].map((c) => (
+                <button key={c} className="quiz-chute-btn" onClick={() => chutar(q.id, c)}>
+                  {c}
+                </button>
+              ))}
+              <button className="quiz-testar-btn" onClick={() => preencherClassificador(q.valores)}>
+                Testar no classificador
+              </button>
+            </div>
+          )}
+
+          {chute && !revelado && (
+            <div className="quiz-resultado-chute">
+              <p>Sua resposta: <strong>{chute}</strong></p>
+              <button className="quiz-revelar-btn" onClick={() => revelar(q.id)}>
+                Revelar resposta
+              </button>
+              <button className="quiz-testar-btn" onClick={() => preencherClassificador(q.valores)}>
+                Testar no classificador
+              </button>
+            </div>
+          )}
+
+          {revelado && (
+            <div className={`quiz-gabarito ${acertou ? "quiz-gabarito--acerto" : "quiz-gabarito--erro"}`}>
+              <p>{acertou ? "Acertou!" : "Errou!"} A resposta é <strong>{q.resposta}</strong></p>
+              <p className="quiz-dica">{q.dica}</p>
+              <button className="quiz-testar-btn" onClick={() => preencherClassificador(q.valores)}>
+                Testar no classificador
+              </button>
+            </div>
+          )}
         </div>
-      )}
+      );
+    })}
+  </div>
+)}
 
       {/* ABA CADERNETA */}
       {aba === "caderneta" && (

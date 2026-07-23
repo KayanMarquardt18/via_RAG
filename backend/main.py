@@ -26,7 +26,7 @@ def run_system(model, features):
     prediction, probabilities = predict(model, input_df)
 
     # 3. explicação via RAG
-    explanation = get_rag_explanation(prediction)
+    explanation = get_rag_explanation(prediction, features)
 
     return prediction, probabilities, explanation
 
