@@ -3,11 +3,6 @@ FROM python:3.13-slim
 WORKDIR /app
 
 COPY requirements.txt .
-
-# Instala o PyTorch CPU-only primeiro (bem mais leve em disco e RAM
-# que a versão padrão, que inclui suporte a GPU/CUDA desnecessário no Railway).
-RUN pip install --no-cache-dir torch==2.12.1 --index-url https://download.pytorch.org/whl/cpu
-
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .

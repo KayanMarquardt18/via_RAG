@@ -1,13 +1,28 @@
 import os
+import requests
 from dotenv import load_dotenv
 import chromadb
-from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 
 load_dotenv()  # lê o arquivo .env e carrega as variáveis
 
-print("Carregando modelo de embeddings...")
-embed_model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+HF_TOKEN = os.getenv("HF_TOKEN")
+HF_MODEL_URL = "https://router.huggingface.co/hf-inference/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/pipeline/feature-extraction"
+
+
+def encode(texto):
+    """
+    Gera o embedding de um texto usando a API de Inference da Hugging Face,
+    em vez de carregar o modelo localmente (economiza memória em produção).
+    """
+    response = requests.post(
+        HF_MODEL_URL,
+        headers={"Authorization": f"Bearer {HF_TOKEN}"},
+        json={"inputs": texto, "options": {"wait_for_model": True}}
+    )
+    response.raise_for_status()
+    return response.json()
+
 
 print("Conectando ao ChromaDB...")
 chroma_client = chromadb.HttpClient(
@@ -25,7 +40,7 @@ llm_client = OpenAI(
 
 
 def buscar_contexto(pergunta, n_results=3):
-    embedding_pergunta = embed_model.encode(pergunta).tolist()
+    embedding_pergunta = encode(pergunta)
     resultado = collection.query(
         query_embeddings=[embedding_pergunta],
         n_results=n_results
@@ -70,10 +85,10 @@ def gerar_resposta(pergunta):
         messages=[
             {"role": "user", "content": prompt}
         ],
-        temperature=0.3
+        temperature=0.3,
+        reasoning_effort="none"
     )
     texto_resposta = resposta.choices[0].message.content
-    # Extrai os nomes de arquivo únicos usados como fonte
     fontes = sorted(set(m["source"] for m in metadados))
     return texto_resposta, fontes
 
