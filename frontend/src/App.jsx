@@ -8,7 +8,7 @@ import Predictor from "./pages/Predictor";
 import Knowledge from "./pages/Knowledge";
 import About from "./pages/About";
 
-import "./styles/App.css";
+import "./styles/app.css";
 
 function App() {
   return (
