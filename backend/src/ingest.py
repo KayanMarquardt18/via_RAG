@@ -5,10 +5,10 @@ from sentence_transformers import SentenceTransformer
 print("Carregando modelo de embeddings...")
 model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
 
-print("Conectando ao ChromaDB...")
 client = chromadb.HttpClient(
-    host="localhost",
-    port=8000
+    host="chroma-production-45c8.up.railway.app",
+    port=443,
+    ssl=True
 )
 
 collection = client.get_or_create_collection(
